@@ -1,0 +1,34 @@
+spring:  
+  application:
+    name: product-service
+  cloud:
+    consul:
+      host: a1c545cc1289211eab19702a1038a16c-712824836.eu-west-1.elb.amazonaws.com
+      port: 80
+      config:
+        enabled: true
+      discovery:
+        instance-id: "${spring.application.name}:${random.value}"
+        prefer-ip-address: true
+
+logging:
+  level:
+    org.springframework.web.filter.CommonsRequestLoggingFilter: DEBUG
+
+server.port: 9001
+
+---
+spring:
+  profiles: zone1
+  cloud:
+    consul:
+      discovery:
+        instanceZone: zone1
+
+---
+spring:
+  profiles: zone2
+  cloud:
+    consul:
+      discovery:
+        instanceZone: zone2

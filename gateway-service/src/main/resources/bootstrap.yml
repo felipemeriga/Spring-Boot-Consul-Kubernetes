@@ -1,0 +1,45 @@
+spring:  
+  application:
+    name: gateway-service
+  cloud:
+    consul:
+      host: a1c545cc1289211eab19702a1038a16c-712824836.eu-west-1.elb.amazonaws.com
+      port: 80
+      discovery:
+        register: false
+        registerHealthCheck: false
+        prefer-ip-address: true
+
+server:
+  port: ${PORT:8080}
+
+logging:
+  level:
+    org.springframework.web.filter.CommonsRequestLoggingFilter: DEBUG
+    
+#---
+#spring:
+#  profiles: zone1
+#  cloud:
+#    consul:
+#      discovery:
+#        instanceZone: zone1
+#        register: false
+#        registerHealthCheck: false
+#        tags: zone=zone1
+#        prefer-ip-address: true
+#server:
+#  port: ${PORT:8080}
+#
+#---
+#spring:
+#  profiles: zone2
+#  cloud:
+#    consul:
+#      discovery:
+#        instanceZone: zone2
+#        register: false
+#        registerHealthCheck: false
+#        tags: zone=zone2
+#server:
+#  port: ${PORT:9080}

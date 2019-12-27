@@ -1,0 +1,35 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: order-service
+spec:
+  selector:
+    app: order-service
+  type: NodePort
+  ports:
+    - port: 80
+      targetPort: 9000
+
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: order-service
+  labels:
+    app: order-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: order-service
+  template:
+    metadata:
+      labels:
+        app: order-service
+    spec:
+      containers:
+        - name: order-service
+          image: felipemeriga1/order-service:latest
+          ports:
+            - containerPort: 9000

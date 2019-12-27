@@ -1,0 +1,860 @@
+13:56:43.251 INFO  Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$5cd5f992] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:56:43.260 INFO  Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$832c646a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:56:48.016 INFO  Located property source: CompositePropertySource {name='consul', propertySources=[ConsulPropertySource {name='config/customer-service,zone2/'}, ConsulPropertySource {name='config/customer-service/'}, ConsulPropertySource {name='config/application,zone2/'}, ConsulPropertySource {name='config/application/'}]}
+13:56:52.983 INFO  The following profiles are active: zone2
+13:56:53.405 WARN  Endpoint ID 'bus-env' contains invalid characters, please migrate to a valid format.
+13:56:53.537 WARN  Endpoint ID 'bus-refresh' contains invalid characters, please migrate to a valid format.
+13:56:53.563 WARN  Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+13:56:53.721 INFO  BeanFactory id=e53f2605-2457-33a7-89c4-356f9dd2537e
+13:56:53.777 INFO  No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+13:56:53.782 INFO  No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+13:56:53.785 INFO  No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+13:56:53.813 INFO  Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$5cd5f992] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:56:53.940 INFO  Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:56:53.945 INFO  Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:56:53.964 INFO  Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:56:53.974 INFO  Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:56:53.981 INFO  Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:56:53.985 INFO  Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:56:54.015 INFO  Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$832c646a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:56:54.268 INFO  Tomcat initialized with port(s): 0 (http)
+13:56:54.275 INFO  Initializing ProtocolHandler ["http-nio-auto-1"]
+13:56:54.276 INFO  Starting service [Tomcat]
+13:56:54.276 INFO  Starting Servlet engine: [Apache Tomcat/9.0.27]
+13:56:54.353 INFO  Initializing Spring embedded WebApplicationContext
+13:56:54.353 INFO  Root WebApplicationContext: initialization completed in 1360 ms
+13:56:54.450 WARN  No URLs will be polled as dynamic configuration sources.
+13:56:54.450 INFO  To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+13:56:54.457 INFO  DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@6ab50d1c
+13:56:54.889 INFO  Initializing ExecutorService 'taskScheduler'
+13:56:55.211 DEBUG Filter 'requestLoggingFilter' configured for use
+13:56:55.393 WARN  No URLs will be polled as dynamic configuration sources.
+13:56:55.393 INFO  To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+13:56:55.497 INFO  Initializing ExecutorService 'applicationTaskExecutor'
+13:56:55.772 INFO  Looking up function 'null' with acceptedOutputTypes: []
+13:56:55.966 WARN  You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+13:56:56.039 INFO  Initializing ExecutorService 'configWatchTaskScheduler'
+13:56:56.051 INFO  Initializing ExecutorService 'catalogWatchTaskScheduler'
+13:56:56.129 INFO  Exposing 2 endpoint(s) beneath base path '/actuator'
+13:56:56.260 INFO  Channel 'customer-service-1.springCloudBusInput' has 1 subscriber(s).
+13:56:56.316 INFO  Registering MessageChannel nullChannel
+13:56:56.329 INFO  Registering MessageChannel errorChannel
+13:56:56.364 INFO  Registering MessageChannel springCloudBusOutput
+13:56:56.384 INFO  Registering MessageChannel springCloudBusInput
+13:56:56.397 INFO  Registering MessageHandler errorLogger
+13:56:56.410 INFO  Registering MessageHandler org.springframework.cloud.stream.binding.StreamListenerMessageHandler@682270ff
+13:56:56.473 INFO  Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+13:56:56.473 INFO  Channel 'customer-service-1.errorChannel' has 1 subscriber(s).
+13:56:56.473 INFO  started bean '_org.springframework.integration.errorLogger'
+13:56:58.012 INFO  Located property source: CompositePropertySource {name='consul', propertySources=[ConsulPropertySource {name='config/customer-service,zone2/'}, ConsulPropertySource {name='config/customer-service/'}, ConsulPropertySource {name='config/application,zone2/'}, ConsulPropertySource {name='config/application/'}]}
+13:57:03.034 INFO  Adding {message-handler:outbound.springCloudBus} as a subscriber to the 'springCloudBusOutput' channel
+13:57:03.035 INFO  Channel 'customer-service-1.springCloudBusOutput' has 1 subscriber(s).
+13:57:03.035 INFO  started bean 'outbound.springCloudBus'
+13:57:03.046 INFO  started org.springframework.cloud.consul.binder.ConsulInboundMessageProducer@4c81e7c2
+13:57:03.072 INFO  Starting ProtocolHandler ["http-nio-auto-1"]
+13:57:03.092 INFO  Tomcat started on port(s): 65457 (http) with context path ''
+13:57:03.102 INFO  Registering service with consul: NewService{id='customer-service-c145790079f735fc7ca4a066434b4fc6', name='customer-service', tags=[zone=zone2, secure=false], address='192.168.0.164', meta=null, port=65457, enableTagOverride=null, check=Check{script='null', interval='10s', ttl='null', http='http://192.168.0.164:65457/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null'}, checks=null}
+13:57:03.120 INFO  Started CustomerApplication in 20.553 seconds (JVM running for 21.089)
+13:57:03.313 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+13:57:03.313 INFO  Initializing Servlet 'dispatcherServlet'
+13:57:03.328 INFO  Completed initialization in 15 ms
+13:57:06.205 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+13:57:06.235 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+13:57:16.231 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+13:57:16.243 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+13:57:26.237 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+13:57:26.246 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+13:57:36.045 DEBUG Before request [GET /, headers=[host:"127.0.0.1:65457", connection:"keep-alive", upgrade-insecure-requests:"1", user-agent:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36", sec-fetch-user:"?1", accept:"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3", sec-fetch-site:"none", sec-fetch-mode:"navigate", accept-encoding:"gzip, deflate, br", accept-language:"pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7"]]
+13:57:36.049 WARN  Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+13:57:36.049 DEBUG REQ:GET /, headers=[host:"127.0.0.1:65457", connection:"keep-alive", upgrade-insecure-requests:"1", user-agent:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36", sec-fetch-user:"?1", accept:"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3", sec-fetch-site:"none", sec-fetch-mode:"navigate", accept-encoding:"gzip, deflate, br", accept-language:"pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7"]]
+13:57:36.238 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+13:57:36.247 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+13:57:36.332 DEBUG Before request [GET /, headers=[host:"127.0.0.1:65457", connection:"keep-alive", user-agent:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36", accept:"*/*", sec-fetch-site:"cross-site", sec-fetch-mode:"cors", accept-encoding:"gzip, deflate, br", accept-language:"pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7"]]
+13:57:36.332 DEBUG Before request [GET /favicon.ico, headers=[host:"127.0.0.1:65457", connection:"keep-alive", user-agent:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36", accept:"image/webp,image/apng,image/*,*/*;q=0.8", sec-fetch-site:"same-origin", sec-fetch-mode:"no-cors", referer:"http://127.0.0.1:65457/", accept-encoding:"gzip, deflate, br", accept-language:"pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7"]]
+13:57:36.332 WARN  Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+13:57:36.333 DEBUG REQ:GET /, headers=[host:"127.0.0.1:65457", connection:"keep-alive", user-agent:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36", accept:"*/*", sec-fetch-site:"cross-site", sec-fetch-mode:"cors", accept-encoding:"gzip, deflate, br", accept-language:"pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7"]]
+13:57:36.344 WARN  Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "favicon.ico"]
+13:57:36.344 DEBUG REQ:GET /favicon.ico, headers=[host:"127.0.0.1:65457", connection:"keep-alive", user-agent:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36", accept:"image/webp,image/apng,image/*,*/*;q=0.8", sec-fetch-site:"same-origin", sec-fetch-mode:"no-cors", referer:"http://127.0.0.1:65457/", accept-encoding:"gzip, deflate, br", accept-language:"pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7"]]
+13:57:39.268 DEBUG Before request [GET /test, headers=[host:"127.0.0.1:65457", connection:"keep-alive", upgrade-insecure-requests:"1", user-agent:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36", sec-fetch-user:"?1", accept:"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3", sec-fetch-site:"none", sec-fetch-mode:"navigate", accept-encoding:"gzip, deflate, br", accept-language:"pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7"]]
+13:57:39.271 DEBUG REQ:GET /test, headers=[host:"127.0.0.1:65457", connection:"keep-alive", upgrade-insecure-requests:"1", user-agent:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36", sec-fetch-user:"?1", accept:"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3", sec-fetch-site:"none", sec-fetch-mode:"navigate", accept-encoding:"gzip, deflate, br", accept-language:"pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7"]]
+13:57:39.346 DEBUG Before request [GET /favicon.ico, headers=[host:"127.0.0.1:65457", connection:"keep-alive", user-agent:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36", accept:"image/webp,image/apng,image/*,*/*;q=0.8", sec-fetch-site:"same-origin", sec-fetch-mode:"no-cors", referer:"http://127.0.0.1:65457/test", accept-encoding:"gzip, deflate, br", accept-language:"pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7"]]
+13:57:39.346 DEBUG Before request [GET /test, headers=[host:"127.0.0.1:65457", connection:"keep-alive", user-agent:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36", accept:"*/*", sec-fetch-site:"cross-site", sec-fetch-mode:"cors", accept-encoding:"gzip, deflate, br", accept-language:"pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7"]]
+13:57:39.347 WARN  Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "favicon.ico"]
+13:57:39.347 DEBUG REQ:GET /favicon.ico, headers=[host:"127.0.0.1:65457", connection:"keep-alive", user-agent:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36", accept:"image/webp,image/apng,image/*,*/*;q=0.8", sec-fetch-site:"same-origin", sec-fetch-mode:"no-cors", referer:"http://127.0.0.1:65457/test", accept-encoding:"gzip, deflate, br", accept-language:"pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7"]]
+13:57:39.347 DEBUG REQ:GET /test, headers=[host:"127.0.0.1:65457", connection:"keep-alive", user-agent:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36", accept:"*/*", sec-fetch-site:"cross-site", sec-fetch-mode:"cors", accept-encoding:"gzip, deflate, br", accept-language:"pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7"]]
+13:57:46.238 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+13:57:46.247 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+13:57:56.241 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+13:57:56.253 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+13:58:06.247 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+13:58:06.257 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+13:58:16.249 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+13:58:16.261 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+13:58:26.253 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+13:58:26.264 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+13:58:36.257 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+13:58:36.264 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+13:58:46.257 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+13:58:46.265 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+13:58:56.257 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+13:58:56.265 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+13:59:06.257 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+13:59:06.267 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+13:59:16.260 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+13:59:16.268 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+13:59:26.261 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+13:59:26.269 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+13:59:36.262 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+13:59:36.273 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+13:59:46.265 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+13:59:46.273 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+13:59:50.191 INFO  Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$86773b52] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:59:50.195 INFO  Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$accda62a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:59:54.949 INFO  Located property source: CompositePropertySource {name='consul', propertySources=[ConsulPropertySource {name='config/customer-service,zone1/'}, ConsulPropertySource {name='config/customer-service/'}, ConsulPropertySource {name='config/application,zone1/'}, ConsulPropertySource {name='config/application/'}]}
+13:59:56.264 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+13:59:56.273 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+13:59:59.913 INFO  The following profiles are active: zone1
+14:00:00.332 WARN  Endpoint ID 'bus-env' contains invalid characters, please migrate to a valid format.
+14:00:00.463 WARN  Endpoint ID 'bus-refresh' contains invalid characters, please migrate to a valid format.
+14:00:00.492 WARN  Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+14:00:00.652 INFO  BeanFactory id=e53f2605-2457-33a7-89c4-356f9dd2537e
+14:00:00.714 INFO  No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+14:00:00.720 INFO  No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+14:00:00.722 INFO  No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+14:00:00.750 INFO  Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$86773b52] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:00:00.883 INFO  Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:00:00.888 INFO  Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:00:00.910 INFO  Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:00:00.919 INFO  Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:00:00.927 INFO  Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:00:00.931 INFO  Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:00:00.962 INFO  Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$accda62a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:00:01.217 INFO  Tomcat initialized with port(s): 0 (http)
+14:00:01.224 INFO  Initializing ProtocolHandler ["http-nio-auto-1"]
+14:00:01.224 INFO  Starting service [Tomcat]
+14:00:01.224 INFO  Starting Servlet engine: [Apache Tomcat/9.0.27]
+14:00:01.302 INFO  Initializing Spring embedded WebApplicationContext
+14:00:01.302 INFO  Root WebApplicationContext: initialization completed in 1380 ms
+14:00:01.397 WARN  No URLs will be polled as dynamic configuration sources.
+14:00:01.397 INFO  To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+14:00:01.403 INFO  DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@7809b43a
+14:00:01.842 INFO  Initializing ExecutorService 'taskScheduler'
+14:00:02.163 DEBUG Filter 'requestLoggingFilter' configured for use
+14:00:02.348 WARN  No URLs will be polled as dynamic configuration sources.
+14:00:02.348 INFO  To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+14:00:02.450 INFO  Initializing ExecutorService 'applicationTaskExecutor'
+14:00:02.731 INFO  Looking up function 'null' with acceptedOutputTypes: []
+14:00:02.910 WARN  You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+14:00:02.983 INFO  Initializing ExecutorService 'configWatchTaskScheduler'
+14:00:02.995 INFO  Initializing ExecutorService 'catalogWatchTaskScheduler'
+14:00:03.075 INFO  Exposing 2 endpoint(s) beneath base path '/actuator'
+14:00:03.193 INFO  Channel 'customer-service-1.springCloudBusInput' has 1 subscriber(s).
+14:00:03.251 INFO  Registering MessageChannel nullChannel
+14:00:03.263 INFO  Registering MessageChannel springCloudBusOutput
+14:00:03.311 INFO  Registering MessageChannel springCloudBusInput
+14:00:03.319 INFO  Registering MessageChannel errorChannel
+14:00:03.346 INFO  Registering MessageHandler org.springframework.cloud.stream.binding.StreamListenerMessageHandler@3b62c51e
+14:00:03.376 INFO  Registering MessageHandler errorLogger
+14:00:03.420 INFO  Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+14:00:03.420 INFO  Channel 'customer-service-1.errorChannel' has 1 subscriber(s).
+14:00:03.420 INFO  started bean '_org.springframework.integration.errorLogger'
+14:00:04.940 INFO  Located property source: CompositePropertySource {name='consul', propertySources=[ConsulPropertySource {name='config/customer-service,zone1/'}, ConsulPropertySource {name='config/customer-service/'}, ConsulPropertySource {name='config/application,zone1/'}, ConsulPropertySource {name='config/application/'}]}
+14:00:06.266 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:00:06.277 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:00:09.967 INFO  Adding {message-handler:outbound.springCloudBus} as a subscriber to the 'springCloudBusOutput' channel
+14:00:09.967 INFO  Channel 'customer-service-1.springCloudBusOutput' has 1 subscriber(s).
+14:00:09.967 INFO  started bean 'outbound.springCloudBus'
+14:00:09.976 INFO  started org.springframework.cloud.consul.binder.ConsulInboundMessageProducer@511ad0dd
+14:00:10.000 INFO  Starting ProtocolHandler ["http-nio-auto-1"]
+14:00:10.018 INFO  Tomcat started on port(s): 49182 (http) with context path ''
+14:00:10.027 INFO  Registering service with consul: NewService{id='customer-service-e390b997c6f6276b422bc0e25f06de52', name='customer-service', tags=[zone=zone1, secure=false], address='192.168.0.164', meta=null, port=49182, enableTagOverride=null, check=Check{script='null', interval='10s', ttl='null', http='http://192.168.0.164:49182/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null'}, checks=null}
+14:00:10.048 INFO  Started CustomerApplication in 20.55 seconds (JVM running for 21.09)
+14:00:10.542 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:00:10.543 INFO  Initializing Servlet 'dispatcherServlet'
+14:00:10.560 INFO  Completed initialization in 16 ms
+14:00:15.481 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49182", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:00:15.511 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49182", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:00:16.269 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:00:16.279 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:00:25.507 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49182", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:00:25.517 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49182", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:00:26.271 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:00:26.278 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:00:32.258 INFO  stopped org.springframework.cloud.consul.binder.ConsulInboundMessageProducer@511ad0dd
+14:00:32.258 INFO  Removing {message-handler:outbound.springCloudBus} as a subscriber to the 'springCloudBusOutput' channel
+14:00:32.259 INFO  Channel 'customer-service-1.springCloudBusOutput' has 0 subscriber(s).
+14:00:32.259 INFO  stopped bean 'outbound.springCloudBus'
+14:00:32.259 INFO  Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+14:00:32.259 INFO  Channel 'customer-service-1.errorChannel' has 0 subscriber(s).
+14:00:32.259 INFO  stopped bean '_org.springframework.integration.errorLogger'
+14:00:32.260 INFO  Shutting down ExecutorService 'catalogWatchTaskScheduler'
+14:00:32.260 INFO  Shutting down ExecutorService 'configWatchTaskScheduler'
+14:00:32.261 INFO  Shutting down ExecutorService 'applicationTaskExecutor'
+14:00:32.263 INFO  Deregistering service with consul: customer-service-e390b997c6f6276b422bc0e25f06de52
+14:00:32.272 INFO  Shutting down ExecutorService 'taskScheduler'
+14:00:32.274 INFO  Summary on shutdown: nullChannel
+14:00:32.274 INFO  Summary on shutdown: bean 'springCloudBusOutput'
+14:00:32.274 INFO  Summary on shutdown: bean 'springCloudBusInput'
+14:00:32.274 INFO  Summary on shutdown: bean 'errorChannel'
+14:00:32.274 INFO  Summary on shutdown: org.springframework.cloud.stream.binding.StreamListenerMessageHandler@3b62c51e
+14:00:32.274 INFO  Summary on shutdown: bean '_org.springframework.integration.errorLogger.handler' for component '_org.springframework.integration.errorLogger'
+14:00:35.054 INFO  Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$b3fce48d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:00:35.058 INFO  Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$da534f65] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:00:36.270 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:00:36.279 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:00:39.804 INFO  Located property source: CompositePropertySource {name='consul', propertySources=[ConsulPropertySource {name='config/customer-service,zone2/'}, ConsulPropertySource {name='config/customer-service/'}, ConsulPropertySource {name='config/application,zone2/'}, ConsulPropertySource {name='config/application/'}]}
+14:00:44.767 INFO  The following profiles are active: zone2
+14:00:45.185 WARN  Endpoint ID 'bus-env' contains invalid characters, please migrate to a valid format.
+14:00:45.319 WARN  Endpoint ID 'bus-refresh' contains invalid characters, please migrate to a valid format.
+14:00:45.350 WARN  Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+14:00:45.507 INFO  BeanFactory id=e53f2605-2457-33a7-89c4-356f9dd2537e
+14:00:45.563 INFO  No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+14:00:45.567 INFO  No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+14:00:45.570 INFO  No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+14:00:45.598 INFO  Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$b3fce48d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:00:45.725 INFO  Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:00:45.730 INFO  Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:00:45.751 INFO  Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:00:45.761 INFO  Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:00:45.769 INFO  Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:00:45.773 INFO  Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:00:45.806 INFO  Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$da534f65] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:00:46.061 INFO  Tomcat initialized with port(s): 0 (http)
+14:00:46.069 INFO  Initializing ProtocolHandler ["http-nio-auto-1"]
+14:00:46.070 INFO  Starting service [Tomcat]
+14:00:46.070 INFO  Starting Servlet engine: [Apache Tomcat/9.0.27]
+14:00:46.152 INFO  Initializing Spring embedded WebApplicationContext
+14:00:46.152 INFO  Root WebApplicationContext: initialization completed in 1374 ms
+14:00:46.257 WARN  No URLs will be polled as dynamic configuration sources.
+14:00:46.257 INFO  To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+14:00:46.264 INFO  DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@30a62a5b
+14:00:46.270 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:00:46.277 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:00:46.704 INFO  Initializing ExecutorService 'taskScheduler'
+14:00:47.047 DEBUG Filter 'requestLoggingFilter' configured for use
+14:00:47.255 WARN  No URLs will be polled as dynamic configuration sources.
+14:00:47.255 INFO  To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+14:00:47.359 INFO  Initializing ExecutorService 'applicationTaskExecutor'
+14:00:47.648 INFO  Looking up function 'null' with acceptedOutputTypes: []
+14:00:47.845 WARN  You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+14:00:47.922 INFO  Initializing ExecutorService 'configWatchTaskScheduler'
+14:00:47.935 INFO  Initializing ExecutorService 'catalogWatchTaskScheduler'
+14:00:48.030 INFO  Exposing 2 endpoint(s) beneath base path '/actuator'
+14:00:48.149 INFO  Channel 'customer-service-1.springCloudBusInput' has 1 subscriber(s).
+14:00:48.206 INFO  Registering MessageChannel errorChannel
+14:00:48.245 INFO  Registering MessageChannel nullChannel
+14:00:48.255 INFO  Registering MessageChannel springCloudBusInput
+14:00:48.274 INFO  Registering MessageChannel springCloudBusOutput
+14:00:48.288 INFO  Registering MessageHandler errorLogger
+14:00:48.300 INFO  Registering MessageHandler org.springframework.cloud.stream.binding.StreamListenerMessageHandler@44181746
+14:00:48.365 INFO  Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+14:00:48.365 INFO  Channel 'customer-service-1.errorChannel' has 1 subscriber(s).
+14:00:48.365 INFO  started bean '_org.springframework.integration.errorLogger'
+14:00:49.797 INFO  Located property source: CompositePropertySource {name='consul', propertySources=[ConsulPropertySource {name='config/customer-service,zone2/'}, ConsulPropertySource {name='config/customer-service/'}, ConsulPropertySource {name='config/application,zone2/'}, ConsulPropertySource {name='config/application/'}]}
+14:00:54.818 INFO  Adding {message-handler:outbound.springCloudBus} as a subscriber to the 'springCloudBusOutput' channel
+14:00:54.818 INFO  Channel 'customer-service-1.springCloudBusOutput' has 1 subscriber(s).
+14:00:54.818 INFO  started bean 'outbound.springCloudBus'
+14:00:54.827 INFO  started org.springframework.cloud.consul.binder.ConsulInboundMessageProducer@6bf34912
+14:00:54.851 INFO  Starting ProtocolHandler ["http-nio-auto-1"]
+14:00:54.869 INFO  Tomcat started on port(s): 49232 (http) with context path ''
+14:00:54.879 INFO  Registering service with consul: NewService{id='customer-service-fcb51cc8b6dadc7ac4daf1c87dd7099d', name='customer-service', tags=[zone=zone2, secure=false], address='192.168.0.164', meta=null, port=49232, enableTagOverride=null, check=Check{script='null', interval='10s', ttl='null', http='http://192.168.0.164:49232/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null'}, checks=null}
+14:00:54.901 INFO  Started CustomerApplication in 20.554 seconds (JVM running for 21.103)
+14:00:54.947 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:00:54.947 INFO  Initializing Servlet 'dispatcherServlet'
+14:00:54.959 INFO  Completed initialization in 12 ms
+14:00:54.973 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49232", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:00:55.033 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49232", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:00:56.268 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:00:56.274 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:01:05.029 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49232", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:01:05.039 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49232", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:01:06.267 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:01:06.278 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:01:15.033 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49232", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:01:15.043 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49232", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:01:16.269 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:01:16.275 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:01:25.035 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49232", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:01:25.047 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49232", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:01:26.267 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:01:26.276 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:01:35.040 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49232", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:01:35.050 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49232", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:01:36.268 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:01:36.279 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:01:45.043 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49232", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:01:45.052 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49232", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:01:46.272 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:01:46.281 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:01:55.046 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49232", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:01:55.057 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49232", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:01:56.277 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:01:56.288 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:01:58.833 INFO  stopped org.springframework.cloud.consul.binder.ConsulInboundMessageProducer@6bf34912
+14:01:58.833 INFO  Removing {message-handler:outbound.springCloudBus} as a subscriber to the 'springCloudBusOutput' channel
+14:01:58.833 INFO  Channel 'customer-service-1.springCloudBusOutput' has 0 subscriber(s).
+14:01:58.833 INFO  stopped bean 'outbound.springCloudBus'
+14:01:58.833 INFO  Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+14:01:58.833 INFO  Channel 'customer-service-1.errorChannel' has 0 subscriber(s).
+14:01:58.833 INFO  stopped bean '_org.springframework.integration.errorLogger'
+14:01:58.834 INFO  Shutting down ExecutorService 'catalogWatchTaskScheduler'
+14:01:58.834 INFO  Shutting down ExecutorService 'configWatchTaskScheduler'
+14:01:58.835 INFO  Shutting down ExecutorService 'applicationTaskExecutor'
+14:01:58.837 INFO  Deregistering service with consul: customer-service-fcb51cc8b6dadc7ac4daf1c87dd7099d
+14:01:58.849 INFO  Shutting down ExecutorService 'taskScheduler'
+14:01:58.851 INFO  Summary on shutdown: bean 'errorChannel'
+14:01:58.851 INFO  Summary on shutdown: nullChannel
+14:01:58.851 INFO  Summary on shutdown: bean 'springCloudBusInput'
+14:01:58.851 INFO  Summary on shutdown: bean 'springCloudBusOutput'
+14:01:58.851 INFO  Summary on shutdown: bean '_org.springframework.integration.errorLogger.handler' for component '_org.springframework.integration.errorLogger'
+14:01:58.851 INFO  Summary on shutdown: org.springframework.cloud.stream.binding.StreamListenerMessageHandler@44181746
+14:02:06.283 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:02:06.294 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:02:16.288 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:02:16.297 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:02:26.290 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:02:26.300 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:02:36.293 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:02:36.300 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:02:46.291 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:02:46.300 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:02:56.294 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:02:56.303 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:03:06.296 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:03:06.305 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:03:16.297 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:03:16.304 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:03:26.296 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:03:26.306 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:03:36.298 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:03:36.305 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:03:46.298 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:03:46.307 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:03:56.298 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:03:56.305 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:04:06.296 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:04:06.305 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:04:16.297 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:04:16.309 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:04:26.301 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:04:26.312 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:04:36.305 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:04:36.313 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:04:46.306 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:04:46.317 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:04:56.310 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:04:56.319 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:05:06.311 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:05:06.321 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:05:16.313 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:05:16.320 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:05:26.312 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:05:26.321 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:05:36.316 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:05:36.326 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:05:46.319 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:05:46.327 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:05:56.318 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:05:56.326 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:06:06.318 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:06:06.328 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:06:16.320 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:06:16.329 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:65457", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:06:23.354 INFO  stopped org.springframework.cloud.consul.binder.ConsulInboundMessageProducer@4c81e7c2
+14:06:23.355 INFO  Removing {message-handler:outbound.springCloudBus} as a subscriber to the 'springCloudBusOutput' channel
+14:06:23.355 INFO  Channel 'customer-service-1.springCloudBusOutput' has 0 subscriber(s).
+14:06:23.355 INFO  stopped bean 'outbound.springCloudBus'
+14:06:23.355 INFO  Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+14:06:23.355 INFO  Channel 'customer-service-1.errorChannel' has 0 subscriber(s).
+14:06:23.355 INFO  stopped bean '_org.springframework.integration.errorLogger'
+14:06:23.356 INFO  Shutting down ExecutorService 'catalogWatchTaskScheduler'
+14:06:23.357 INFO  Shutting down ExecutorService 'configWatchTaskScheduler'
+14:06:23.358 INFO  Shutting down ExecutorService 'applicationTaskExecutor'
+14:06:23.359 INFO  Deregistering service with consul: customer-service-c145790079f735fc7ca4a066434b4fc6
+14:06:23.367 INFO  Shutting down ExecutorService 'taskScheduler'
+14:06:23.369 INFO  Summary on shutdown: nullChannel
+14:06:23.369 INFO  Summary on shutdown: bean 'errorChannel'
+14:06:23.369 INFO  Summary on shutdown: bean 'springCloudBusOutput'
+14:06:23.369 INFO  Summary on shutdown: bean 'springCloudBusInput'
+14:06:23.369 INFO  Summary on shutdown: bean '_org.springframework.integration.errorLogger.handler' for component '_org.springframework.integration.errorLogger'
+14:06:23.369 INFO  Summary on shutdown: org.springframework.cloud.stream.binding.StreamListenerMessageHandler@682270ff
+14:12:09.053 INFO  Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$365c745b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:12:09.057 INFO  Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$5cb2df33] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:12:13.812 INFO  Located property source: CompositePropertySource {name='consul', propertySources=[ConsulPropertySource {name='config/customer-service,zone2/'}, ConsulPropertySource {name='config/customer-service/'}, ConsulPropertySource {name='config/application,zone2/'}, ConsulPropertySource {name='config/application/'}]}
+14:12:18.776 INFO  The following profiles are active: zone2
+14:12:19.200 WARN  Endpoint ID 'bus-env' contains invalid characters, please migrate to a valid format.
+14:12:19.322 WARN  Endpoint ID 'bus-refresh' contains invalid characters, please migrate to a valid format.
+14:12:19.348 WARN  Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+14:12:19.506 INFO  BeanFactory id=e53f2605-2457-33a7-89c4-356f9dd2537e
+14:12:19.558 INFO  No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+14:12:19.563 INFO  No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+14:12:19.566 INFO  No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+14:12:19.594 INFO  Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$365c745b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:12:19.729 INFO  Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:12:19.734 INFO  Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:12:19.756 INFO  Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:12:19.765 INFO  Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:12:19.773 INFO  Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:12:19.777 INFO  Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:12:19.809 INFO  Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$5cb2df33] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:12:20.033 INFO  Tomcat initialized with port(s): 0 (http)
+14:12:20.040 INFO  Initializing ProtocolHandler ["http-nio-auto-1"]
+14:12:20.040 INFO  Starting service [Tomcat]
+14:12:20.040 INFO  Starting Servlet engine: [Apache Tomcat/9.0.27]
+14:12:20.110 INFO  Initializing Spring embedded WebApplicationContext
+14:12:20.110 INFO  Root WebApplicationContext: initialization completed in 1325 ms
+14:12:20.201 WARN  No URLs will be polled as dynamic configuration sources.
+14:12:20.201 INFO  To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+14:12:20.206 INFO  DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@41f40dfa
+14:12:20.628 INFO  Initializing ExecutorService 'taskScheduler'
+14:12:20.944 DEBUG Filter 'requestLoggingFilter' configured for use
+14:12:21.125 WARN  No URLs will be polled as dynamic configuration sources.
+14:12:21.125 INFO  To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+14:12:21.226 INFO  Initializing ExecutorService 'applicationTaskExecutor'
+14:12:21.515 INFO  Looking up function 'null' with acceptedOutputTypes: []
+14:12:21.698 WARN  You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+14:12:21.773 INFO  Initializing ExecutorService 'configWatchTaskScheduler'
+14:12:21.785 INFO  Initializing ExecutorService 'catalogWatchTaskScheduler'
+14:12:21.868 INFO  Exposing 2 endpoint(s) beneath base path '/actuator'
+14:12:21.984 INFO  Channel 'customer-service-1.springCloudBusInput' has 1 subscriber(s).
+14:12:22.044 INFO  Registering MessageChannel springCloudBusInput
+14:12:22.081 INFO  Registering MessageChannel springCloudBusOutput
+14:12:22.090 INFO  Registering MessageChannel nullChannel
+14:12:22.099 INFO  Registering MessageChannel errorChannel
+14:12:22.127 INFO  Registering MessageHandler errorLogger
+14:12:22.139 INFO  Registering MessageHandler org.springframework.cloud.stream.binding.StreamListenerMessageHandler@7866fe3e
+14:12:22.198 INFO  Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+14:12:22.199 INFO  Channel 'customer-service-1.errorChannel' has 1 subscriber(s).
+14:12:22.199 INFO  started bean '_org.springframework.integration.errorLogger'
+14:12:23.804 INFO  Located property source: CompositePropertySource {name='consul', propertySources=[ConsulPropertySource {name='config/customer-service,zone2/'}, ConsulPropertySource {name='config/customer-service/'}, ConsulPropertySource {name='config/application,zone2/'}, ConsulPropertySource {name='config/application/'}]}
+14:12:28.834 INFO  Adding {message-handler:outbound.springCloudBus} as a subscriber to the 'springCloudBusOutput' channel
+14:12:28.834 INFO  Channel 'customer-service-1.springCloudBusOutput' has 1 subscriber(s).
+14:12:28.834 INFO  started bean 'outbound.springCloudBus'
+14:12:28.843 INFO  started org.springframework.cloud.consul.binder.ConsulInboundMessageProducer@44cab872
+14:12:28.866 INFO  Starting ProtocolHandler ["http-nio-auto-1"]
+14:12:28.887 INFO  Tomcat started on port(s): 49610 (http) with context path ''
+14:12:28.896 INFO  Registering service with consul: NewService{id='customer-service-8de5c288b54ad1542911c86f2fbca572', name='customer-service', tags=[zone=zone2, secure=false], address='192.168.0.164', meta=null, port=49610, enableTagOverride=null, check=Check{script='null', interval='10s', ttl='null', http='http://192.168.0.164:49610/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null'}, checks=null}
+14:12:28.920 INFO  Started CustomerApplication in 20.542 seconds (JVM running for 21.071)
+14:12:29.135 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:12:29.138 INFO  Initializing Servlet 'dispatcherServlet'
+14:12:29.161 INFO  Completed initialization in 23 ms
+14:12:38.714 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:12:38.748 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:12:48.744 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:12:48.753 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:12:58.746 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:12:58.757 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:13:08.751 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:13:08.760 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:13:13.932 DEBUG Before request [GET /test, headers=[host:"localhost:8080", authorization:"Basic eyJraWQiOiIyTEI1a2tSNVdET3dYNkMxMGRLVVc2Vm0yVm1QQ25CaEdNdGFtZ25VZW9BPSIsImFsZyI6IlJTMjU2In0.eyJhdF9oYXNoIjoiWS1ucnVOcWNpNUYxVXdvSkx2XzEwdyIsInN1YiI6IjMwYWEwNDg1LTY0NWItNGI3NS04YTA0LTNiNmIzNmI3ZmMyNSIsImF1ZCI6Ijd1bnE0MmkyM2Y2OGR2OGVqYWcwbG1lZnFjIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNTc0MjkwNzU5LCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtd2VzdC0xLmFtYXpvbmF3cy5jb21cL2V1LXdlc3QtMV9NejVtT0ZsSXEiLCJjb2duaXRvOnVzZXJuYW1lIjoiZmVsaXBlIiwiZXhwIjoxNTc0Mjk0MzU5LCJpYXQiOjE1NzQyOTA3NTksImVtYWlsIjoiZmVsaXBlLm1lcmlnYUBnbWFpbC5jb20ifQ.n0tkdkpDsGsss8YAArnWPABXKmUCdihibXy1lAvZj0CiJ4SsiZyxIr8MlB-bdFeiODZFOAeUbnfF_N1VHV1N8NnBXhlcw-VInW39DmK-dIrPnw3ykRQgjszOpxsJdza2YnfGakiy0T_zHbBMip8fPgUNHBvBQh2uWVzOiRIqvCEF_eL7_8QJbqLMHLXgVD7IXOpcwZTiEIWn0FKtw7WruLVRMa_jS1P-vylVYCf_ZMz1E-Mdgu7kXWuWXXNTWoiePShaoe26a0bzoDMTuEO4aFIFZG48Vel_Pb1Gk5a2lIkhdAy9umvhTjhfoxRC1whWtVWXwupn1FiAImk9xjAX6Q", user-agent:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36", accept:"*/*", sec-fetch-site:"cross-site", sec-fetch-mode:"cors", accept-encoding:"gzip, deflate, br", accept-language:"pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7", cookie:"SESSION=c880f363-7890-484d-8111-3ced09807017; XSRF-TOKEN=jbod1qpidi7hdebd4179qthckn; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBVzcwVDNkYlZrSk9EdG42UDhJQiIsInN1YiI6IlV1aWRuY2lRVVVzN1pkM0tQdkZEIiwiaWF0IjoxNTc2MDU2ODc4LCJleHAiOjE1NzYzMTcxNDgsImxhc3RSZWZyZXNoVGltZSI6MTU3NjA1Njg3ODkzNCwieHNyZlRva2VuIjoiamJvZDFxcGlkaTdoZGViZDQxNzlxdGhja24ifQ.tpa_-8JTNoev1vujNO9zl781AmWYyKybiXNe_USX-Ow", secret:"??????????", forwarded:"proto=http;host="localhost:8080";for="0:0:0:0:0:0:0:1:49554"", x-forwarded-for:"0:0:0:0:0:0:0:1", x-forwarded-proto:"http", x-forwarded-prefix:"/customer", x-forwarded-port:"8080", x-forwarded-host:"localhost:8080", content-length:"0"]]
+14:13:13.938 DEBUG REQ:GET /test, headers=[host:"localhost:8080", authorization:"Basic eyJraWQiOiIyTEI1a2tSNVdET3dYNkMxMGRLVVc2Vm0yVm1QQ25CaEdNdGFtZ25VZW9BPSIsImFsZyI6IlJTMjU2In0.eyJhdF9oYXNoIjoiWS1ucnVOcWNpNUYxVXdvSkx2XzEwdyIsInN1YiI6IjMwYWEwNDg1LTY0NWItNGI3NS04YTA0LTNiNmIzNmI3ZmMyNSIsImF1ZCI6Ijd1bnE0MmkyM2Y2OGR2OGVqYWcwbG1lZnFjIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNTc0MjkwNzU5LCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtd2VzdC0xLmFtYXpvbmF3cy5jb21cL2V1LXdlc3QtMV9NejVtT0ZsSXEiLCJjb2duaXRvOnVzZXJuYW1lIjoiZmVsaXBlIiwiZXhwIjoxNTc0Mjk0MzU5LCJpYXQiOjE1NzQyOTA3NTksImVtYWlsIjoiZmVsaXBlLm1lcmlnYUBnbWFpbC5jb20ifQ.n0tkdkpDsGsss8YAArnWPABXKmUCdihibXy1lAvZj0CiJ4SsiZyxIr8MlB-bdFeiODZFOAeUbnfF_N1VHV1N8NnBXhlcw-VInW39DmK-dIrPnw3ykRQgjszOpxsJdza2YnfGakiy0T_zHbBMip8fPgUNHBvBQh2uWVzOiRIqvCEF_eL7_8QJbqLMHLXgVD7IXOpcwZTiEIWn0FKtw7WruLVRMa_jS1P-vylVYCf_ZMz1E-Mdgu7kXWuWXXNTWoiePShaoe26a0bzoDMTuEO4aFIFZG48Vel_Pb1Gk5a2lIkhdAy9umvhTjhfoxRC1whWtVWXwupn1FiAImk9xjAX6Q", user-agent:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36", accept:"*/*", sec-fetch-site:"cross-site", sec-fetch-mode:"cors", accept-encoding:"gzip, deflate, br", accept-language:"pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7", cookie:"SESSION=c880f363-7890-484d-8111-3ced09807017; XSRF-TOKEN=jbod1qpidi7hdebd4179qthckn; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBVzcwVDNkYlZrSk9EdG42UDhJQiIsInN1YiI6IlV1aWRuY2lRVVVzN1pkM0tQdkZEIiwiaWF0IjoxNTc2MDU2ODc4LCJleHAiOjE1NzYzMTcxNDgsImxhc3RSZWZyZXNoVGltZSI6MTU3NjA1Njg3ODkzNCwieHNyZlRva2VuIjoiamJvZDFxcGlkaTdoZGViZDQxNzlxdGhja24ifQ.tpa_-8JTNoev1vujNO9zl781AmWYyKybiXNe_USX-Ow", secret:"??????????", forwarded:"proto=http;host="localhost:8080";for="0:0:0:0:0:0:0:1:49554"", x-forwarded-for:"0:0:0:0:0:0:0:1", x-forwarded-proto:"http", x-forwarded-prefix:"/customer", x-forwarded-port:"8080", x-forwarded-host:"localhost:8080", content-length:"0"]]
+14:13:16.375 DEBUG Before request [GET /test, headers=[host:"localhost:8080", authorization:"Basic eyJraWQiOiIyTEI1a2tSNVdET3dYNkMxMGRLVVc2Vm0yVm1QQ25CaEdNdGFtZ25VZW9BPSIsImFsZyI6IlJTMjU2In0.eyJhdF9oYXNoIjoiWS1ucnVOcWNpNUYxVXdvSkx2XzEwdyIsInN1YiI6IjMwYWEwNDg1LTY0NWItNGI3NS04YTA0LTNiNmIzNmI3ZmMyNSIsImF1ZCI6Ijd1bnE0MmkyM2Y2OGR2OGVqYWcwbG1lZnFjIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNTc0MjkwNzU5LCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtd2VzdC0xLmFtYXpvbmF3cy5jb21cL2V1LXdlc3QtMV9NejVtT0ZsSXEiLCJjb2duaXRvOnVzZXJuYW1lIjoiZmVsaXBlIiwiZXhwIjoxNTc0Mjk0MzU5LCJpYXQiOjE1NzQyOTA3NTksImVtYWlsIjoiZmVsaXBlLm1lcmlnYUBnbWFpbC5jb20ifQ.n0tkdkpDsGsss8YAArnWPABXKmUCdihibXy1lAvZj0CiJ4SsiZyxIr8MlB-bdFeiODZFOAeUbnfF_N1VHV1N8NnBXhlcw-VInW39DmK-dIrPnw3ykRQgjszOpxsJdza2YnfGakiy0T_zHbBMip8fPgUNHBvBQh2uWVzOiRIqvCEF_eL7_8QJbqLMHLXgVD7IXOpcwZTiEIWn0FKtw7WruLVRMa_jS1P-vylVYCf_ZMz1E-Mdgu7kXWuWXXNTWoiePShaoe26a0bzoDMTuEO4aFIFZG48Vel_Pb1Gk5a2lIkhdAy9umvhTjhfoxRC1whWtVWXwupn1FiAImk9xjAX6Q", user-agent:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36", accept:"*/*", sec-fetch-site:"cross-site", sec-fetch-mode:"cors", accept-encoding:"gzip, deflate, br", accept-language:"pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7", cookie:"SESSION=c880f363-7890-484d-8111-3ced09807017; XSRF-TOKEN=jbod1qpidi7hdebd4179qthckn; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBVzcwVDNkYlZrSk9EdG42UDhJQiIsInN1YiI6IlV1aWRuY2lRVVVzN1pkM0tQdkZEIiwiaWF0IjoxNTc2MDU2ODc4LCJleHAiOjE1NzYzMTcxNDgsImxhc3RSZWZyZXNoVGltZSI6MTU3NjA1Njg3ODkzNCwieHNyZlRva2VuIjoiamJvZDFxcGlkaTdoZGViZDQxNzlxdGhja24ifQ.tpa_-8JTNoev1vujNO9zl781AmWYyKybiXNe_USX-Ow", secret:"??????????", forwarded:"proto=http;host="localhost:8080";for="0:0:0:0:0:0:0:1:49554"", x-forwarded-for:"0:0:0:0:0:0:0:1", x-forwarded-proto:"http", x-forwarded-prefix:"/customer", x-forwarded-port:"8080", x-forwarded-host:"localhost:8080", content-length:"0"]]
+14:13:16.376 DEBUG REQ:GET /test, headers=[host:"localhost:8080", authorization:"Basic eyJraWQiOiIyTEI1a2tSNVdET3dYNkMxMGRLVVc2Vm0yVm1QQ25CaEdNdGFtZ25VZW9BPSIsImFsZyI6IlJTMjU2In0.eyJhdF9oYXNoIjoiWS1ucnVOcWNpNUYxVXdvSkx2XzEwdyIsInN1YiI6IjMwYWEwNDg1LTY0NWItNGI3NS04YTA0LTNiNmIzNmI3ZmMyNSIsImF1ZCI6Ijd1bnE0MmkyM2Y2OGR2OGVqYWcwbG1lZnFjIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNTc0MjkwNzU5LCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtd2VzdC0xLmFtYXpvbmF3cy5jb21cL2V1LXdlc3QtMV9NejVtT0ZsSXEiLCJjb2duaXRvOnVzZXJuYW1lIjoiZmVsaXBlIiwiZXhwIjoxNTc0Mjk0MzU5LCJpYXQiOjE1NzQyOTA3NTksImVtYWlsIjoiZmVsaXBlLm1lcmlnYUBnbWFpbC5jb20ifQ.n0tkdkpDsGsss8YAArnWPABXKmUCdihibXy1lAvZj0CiJ4SsiZyxIr8MlB-bdFeiODZFOAeUbnfF_N1VHV1N8NnBXhlcw-VInW39DmK-dIrPnw3ykRQgjszOpxsJdza2YnfGakiy0T_zHbBMip8fPgUNHBvBQh2uWVzOiRIqvCEF_eL7_8QJbqLMHLXgVD7IXOpcwZTiEIWn0FKtw7WruLVRMa_jS1P-vylVYCf_ZMz1E-Mdgu7kXWuWXXNTWoiePShaoe26a0bzoDMTuEO4aFIFZG48Vel_Pb1Gk5a2lIkhdAy9umvhTjhfoxRC1whWtVWXwupn1FiAImk9xjAX6Q", user-agent:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36", accept:"*/*", sec-fetch-site:"cross-site", sec-fetch-mode:"cors", accept-encoding:"gzip, deflate, br", accept-language:"pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7", cookie:"SESSION=c880f363-7890-484d-8111-3ced09807017; XSRF-TOKEN=jbod1qpidi7hdebd4179qthckn; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBVzcwVDNkYlZrSk9EdG42UDhJQiIsInN1YiI6IlV1aWRuY2lRVVVzN1pkM0tQdkZEIiwiaWF0IjoxNTc2MDU2ODc4LCJleHAiOjE1NzYzMTcxNDgsImxhc3RSZWZyZXNoVGltZSI6MTU3NjA1Njg3ODkzNCwieHNyZlRva2VuIjoiamJvZDFxcGlkaTdoZGViZDQxNzlxdGhja24ifQ.tpa_-8JTNoev1vujNO9zl781AmWYyKybiXNe_USX-Ow", secret:"??????????", forwarded:"proto=http;host="localhost:8080";for="0:0:0:0:0:0:0:1:49554"", x-forwarded-for:"0:0:0:0:0:0:0:1", x-forwarded-proto:"http", x-forwarded-prefix:"/customer", x-forwarded-port:"8080", x-forwarded-host:"localhost:8080", content-length:"0"]]
+14:13:17.008 DEBUG Before request [GET /test, headers=[host:"localhost:8080", authorization:"Basic eyJraWQiOiIyTEI1a2tSNVdET3dYNkMxMGRLVVc2Vm0yVm1QQ25CaEdNdGFtZ25VZW9BPSIsImFsZyI6IlJTMjU2In0.eyJhdF9oYXNoIjoiWS1ucnVOcWNpNUYxVXdvSkx2XzEwdyIsInN1YiI6IjMwYWEwNDg1LTY0NWItNGI3NS04YTA0LTNiNmIzNmI3ZmMyNSIsImF1ZCI6Ijd1bnE0MmkyM2Y2OGR2OGVqYWcwbG1lZnFjIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNTc0MjkwNzU5LCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtd2VzdC0xLmFtYXpvbmF3cy5jb21cL2V1LXdlc3QtMV9NejVtT0ZsSXEiLCJjb2duaXRvOnVzZXJuYW1lIjoiZmVsaXBlIiwiZXhwIjoxNTc0Mjk0MzU5LCJpYXQiOjE1NzQyOTA3NTksImVtYWlsIjoiZmVsaXBlLm1lcmlnYUBnbWFpbC5jb20ifQ.n0tkdkpDsGsss8YAArnWPABXKmUCdihibXy1lAvZj0CiJ4SsiZyxIr8MlB-bdFeiODZFOAeUbnfF_N1VHV1N8NnBXhlcw-VInW39DmK-dIrPnw3ykRQgjszOpxsJdza2YnfGakiy0T_zHbBMip8fPgUNHBvBQh2uWVzOiRIqvCEF_eL7_8QJbqLMHLXgVD7IXOpcwZTiEIWn0FKtw7WruLVRMa_jS1P-vylVYCf_ZMz1E-Mdgu7kXWuWXXNTWoiePShaoe26a0bzoDMTuEO4aFIFZG48Vel_Pb1Gk5a2lIkhdAy9umvhTjhfoxRC1whWtVWXwupn1FiAImk9xjAX6Q", user-agent:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36", accept:"*/*", sec-fetch-site:"cross-site", sec-fetch-mode:"cors", accept-encoding:"gzip, deflate, br", accept-language:"pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7", cookie:"SESSION=c880f363-7890-484d-8111-3ced09807017; XSRF-TOKEN=jbod1qpidi7hdebd4179qthckn; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBVzcwVDNkYlZrSk9EdG42UDhJQiIsInN1YiI6IlV1aWRuY2lRVVVzN1pkM0tQdkZEIiwiaWF0IjoxNTc2MDU2ODc4LCJleHAiOjE1NzYzMTcxNDgsImxhc3RSZWZyZXNoVGltZSI6MTU3NjA1Njg3ODkzNCwieHNyZlRva2VuIjoiamJvZDFxcGlkaTdoZGViZDQxNzlxdGhja24ifQ.tpa_-8JTNoev1vujNO9zl781AmWYyKybiXNe_USX-Ow", secret:"??????????", forwarded:"proto=http;host="localhost:8080";for="0:0:0:0:0:0:0:1:49554"", x-forwarded-for:"0:0:0:0:0:0:0:1", x-forwarded-proto:"http", x-forwarded-prefix:"/customer", x-forwarded-port:"8080", x-forwarded-host:"localhost:8080", content-length:"0"]]
+14:13:17.009 DEBUG REQ:GET /test, headers=[host:"localhost:8080", authorization:"Basic eyJraWQiOiIyTEI1a2tSNVdET3dYNkMxMGRLVVc2Vm0yVm1QQ25CaEdNdGFtZ25VZW9BPSIsImFsZyI6IlJTMjU2In0.eyJhdF9oYXNoIjoiWS1ucnVOcWNpNUYxVXdvSkx2XzEwdyIsInN1YiI6IjMwYWEwNDg1LTY0NWItNGI3NS04YTA0LTNiNmIzNmI3ZmMyNSIsImF1ZCI6Ijd1bnE0MmkyM2Y2OGR2OGVqYWcwbG1lZnFjIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNTc0MjkwNzU5LCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtd2VzdC0xLmFtYXpvbmF3cy5jb21cL2V1LXdlc3QtMV9NejVtT0ZsSXEiLCJjb2duaXRvOnVzZXJuYW1lIjoiZmVsaXBlIiwiZXhwIjoxNTc0Mjk0MzU5LCJpYXQiOjE1NzQyOTA3NTksImVtYWlsIjoiZmVsaXBlLm1lcmlnYUBnbWFpbC5jb20ifQ.n0tkdkpDsGsss8YAArnWPABXKmUCdihibXy1lAvZj0CiJ4SsiZyxIr8MlB-bdFeiODZFOAeUbnfF_N1VHV1N8NnBXhlcw-VInW39DmK-dIrPnw3ykRQgjszOpxsJdza2YnfGakiy0T_zHbBMip8fPgUNHBvBQh2uWVzOiRIqvCEF_eL7_8QJbqLMHLXgVD7IXOpcwZTiEIWn0FKtw7WruLVRMa_jS1P-vylVYCf_ZMz1E-Mdgu7kXWuWXXNTWoiePShaoe26a0bzoDMTuEO4aFIFZG48Vel_Pb1Gk5a2lIkhdAy9umvhTjhfoxRC1whWtVWXwupn1FiAImk9xjAX6Q", user-agent:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36", accept:"*/*", sec-fetch-site:"cross-site", sec-fetch-mode:"cors", accept-encoding:"gzip, deflate, br", accept-language:"pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7", cookie:"SESSION=c880f363-7890-484d-8111-3ced09807017; XSRF-TOKEN=jbod1qpidi7hdebd4179qthckn; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBVzcwVDNkYlZrSk9EdG42UDhJQiIsInN1YiI6IlV1aWRuY2lRVVVzN1pkM0tQdkZEIiwiaWF0IjoxNTc2MDU2ODc4LCJleHAiOjE1NzYzMTcxNDgsImxhc3RSZWZyZXNoVGltZSI6MTU3NjA1Njg3ODkzNCwieHNyZlRva2VuIjoiamJvZDFxcGlkaTdoZGViZDQxNzlxdGhja24ifQ.tpa_-8JTNoev1vujNO9zl781AmWYyKybiXNe_USX-Ow", secret:"??????????", forwarded:"proto=http;host="localhost:8080";for="0:0:0:0:0:0:0:1:49554"", x-forwarded-for:"0:0:0:0:0:0:0:1", x-forwarded-proto:"http", x-forwarded-prefix:"/customer", x-forwarded-port:"8080", x-forwarded-host:"localhost:8080", content-length:"0"]]
+14:13:18.049 DEBUG Before request [GET /test, headers=[host:"localhost:8080", authorization:"Basic eyJraWQiOiIyTEI1a2tSNVdET3dYNkMxMGRLVVc2Vm0yVm1QQ25CaEdNdGFtZ25VZW9BPSIsImFsZyI6IlJTMjU2In0.eyJhdF9oYXNoIjoiWS1ucnVOcWNpNUYxVXdvSkx2XzEwdyIsInN1YiI6IjMwYWEwNDg1LTY0NWItNGI3NS04YTA0LTNiNmIzNmI3ZmMyNSIsImF1ZCI6Ijd1bnE0MmkyM2Y2OGR2OGVqYWcwbG1lZnFjIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNTc0MjkwNzU5LCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtd2VzdC0xLmFtYXpvbmF3cy5jb21cL2V1LXdlc3QtMV9NejVtT0ZsSXEiLCJjb2duaXRvOnVzZXJuYW1lIjoiZmVsaXBlIiwiZXhwIjoxNTc0Mjk0MzU5LCJpYXQiOjE1NzQyOTA3NTksImVtYWlsIjoiZmVsaXBlLm1lcmlnYUBnbWFpbC5jb20ifQ.n0tkdkpDsGsss8YAArnWPABXKmUCdihibXy1lAvZj0CiJ4SsiZyxIr8MlB-bdFeiODZFOAeUbnfF_N1VHV1N8NnBXhlcw-VInW39DmK-dIrPnw3ykRQgjszOpxsJdza2YnfGakiy0T_zHbBMip8fPgUNHBvBQh2uWVzOiRIqvCEF_eL7_8QJbqLMHLXgVD7IXOpcwZTiEIWn0FKtw7WruLVRMa_jS1P-vylVYCf_ZMz1E-Mdgu7kXWuWXXNTWoiePShaoe26a0bzoDMTuEO4aFIFZG48Vel_Pb1Gk5a2lIkhdAy9umvhTjhfoxRC1whWtVWXwupn1FiAImk9xjAX6Q", user-agent:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36", accept:"*/*", sec-fetch-site:"cross-site", sec-fetch-mode:"cors", accept-encoding:"gzip, deflate, br", accept-language:"pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7", cookie:"SESSION=c880f363-7890-484d-8111-3ced09807017; XSRF-TOKEN=jbod1qpidi7hdebd4179qthckn; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBVzcwVDNkYlZrSk9EdG42UDhJQiIsInN1YiI6IlV1aWRuY2lRVVVzN1pkM0tQdkZEIiwiaWF0IjoxNTc2MDU2ODc4LCJleHAiOjE1NzYzMTcxNDgsImxhc3RSZWZyZXNoVGltZSI6MTU3NjA1Njg3ODkzNCwieHNyZlRva2VuIjoiamJvZDFxcGlkaTdoZGViZDQxNzlxdGhja24ifQ.tpa_-8JTNoev1vujNO9zl781AmWYyKybiXNe_USX-Ow", secret:"??????????", forwarded:"proto=http;host="localhost:8080";for="0:0:0:0:0:0:0:1:49554"", x-forwarded-for:"0:0:0:0:0:0:0:1", x-forwarded-proto:"http", x-forwarded-prefix:"/customer", x-forwarded-port:"8080", x-forwarded-host:"localhost:8080", content-length:"0"]]
+14:13:18.051 DEBUG REQ:GET /test, headers=[host:"localhost:8080", authorization:"Basic eyJraWQiOiIyTEI1a2tSNVdET3dYNkMxMGRLVVc2Vm0yVm1QQ25CaEdNdGFtZ25VZW9BPSIsImFsZyI6IlJTMjU2In0.eyJhdF9oYXNoIjoiWS1ucnVOcWNpNUYxVXdvSkx2XzEwdyIsInN1YiI6IjMwYWEwNDg1LTY0NWItNGI3NS04YTA0LTNiNmIzNmI3ZmMyNSIsImF1ZCI6Ijd1bnE0MmkyM2Y2OGR2OGVqYWcwbG1lZnFjIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNTc0MjkwNzU5LCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtd2VzdC0xLmFtYXpvbmF3cy5jb21cL2V1LXdlc3QtMV9NejVtT0ZsSXEiLCJjb2duaXRvOnVzZXJuYW1lIjoiZmVsaXBlIiwiZXhwIjoxNTc0Mjk0MzU5LCJpYXQiOjE1NzQyOTA3NTksImVtYWlsIjoiZmVsaXBlLm1lcmlnYUBnbWFpbC5jb20ifQ.n0tkdkpDsGsss8YAArnWPABXKmUCdihibXy1lAvZj0CiJ4SsiZyxIr8MlB-bdFeiODZFOAeUbnfF_N1VHV1N8NnBXhlcw-VInW39DmK-dIrPnw3ykRQgjszOpxsJdza2YnfGakiy0T_zHbBMip8fPgUNHBvBQh2uWVzOiRIqvCEF_eL7_8QJbqLMHLXgVD7IXOpcwZTiEIWn0FKtw7WruLVRMa_jS1P-vylVYCf_ZMz1E-Mdgu7kXWuWXXNTWoiePShaoe26a0bzoDMTuEO4aFIFZG48Vel_Pb1Gk5a2lIkhdAy9umvhTjhfoxRC1whWtVWXwupn1FiAImk9xjAX6Q", user-agent:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36", accept:"*/*", sec-fetch-site:"cross-site", sec-fetch-mode:"cors", accept-encoding:"gzip, deflate, br", accept-language:"pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7", cookie:"SESSION=c880f363-7890-484d-8111-3ced09807017; XSRF-TOKEN=jbod1qpidi7hdebd4179qthckn; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBVzcwVDNkYlZrSk9EdG42UDhJQiIsInN1YiI6IlV1aWRuY2lRVVVzN1pkM0tQdkZEIiwiaWF0IjoxNTc2MDU2ODc4LCJleHAiOjE1NzYzMTcxNDgsImxhc3RSZWZyZXNoVGltZSI6MTU3NjA1Njg3ODkzNCwieHNyZlRva2VuIjoiamJvZDFxcGlkaTdoZGViZDQxNzlxdGhja24ifQ.tpa_-8JTNoev1vujNO9zl781AmWYyKybiXNe_USX-Ow", secret:"??????????", forwarded:"proto=http;host="localhost:8080";for="0:0:0:0:0:0:0:1:49554"", x-forwarded-for:"0:0:0:0:0:0:0:1", x-forwarded-proto:"http", x-forwarded-prefix:"/customer", x-forwarded-port:"8080", x-forwarded-host:"localhost:8080", content-length:"0"]]
+14:13:18.752 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:13:18.760 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:13:18.785 DEBUG Before request [GET /test, headers=[host:"localhost:8080", authorization:"Basic eyJraWQiOiIyTEI1a2tSNVdET3dYNkMxMGRLVVc2Vm0yVm1QQ25CaEdNdGFtZ25VZW9BPSIsImFsZyI6IlJTMjU2In0.eyJhdF9oYXNoIjoiWS1ucnVOcWNpNUYxVXdvSkx2XzEwdyIsInN1YiI6IjMwYWEwNDg1LTY0NWItNGI3NS04YTA0LTNiNmIzNmI3ZmMyNSIsImF1ZCI6Ijd1bnE0MmkyM2Y2OGR2OGVqYWcwbG1lZnFjIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNTc0MjkwNzU5LCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtd2VzdC0xLmFtYXpvbmF3cy5jb21cL2V1LXdlc3QtMV9NejVtT0ZsSXEiLCJjb2duaXRvOnVzZXJuYW1lIjoiZmVsaXBlIiwiZXhwIjoxNTc0Mjk0MzU5LCJpYXQiOjE1NzQyOTA3NTksImVtYWlsIjoiZmVsaXBlLm1lcmlnYUBnbWFpbC5jb20ifQ.n0tkdkpDsGsss8YAArnWPABXKmUCdihibXy1lAvZj0CiJ4SsiZyxIr8MlB-bdFeiODZFOAeUbnfF_N1VHV1N8NnBXhlcw-VInW39DmK-dIrPnw3ykRQgjszOpxsJdza2YnfGakiy0T_zHbBMip8fPgUNHBvBQh2uWVzOiRIqvCEF_eL7_8QJbqLMHLXgVD7IXOpcwZTiEIWn0FKtw7WruLVRMa_jS1P-vylVYCf_ZMz1E-Mdgu7kXWuWXXNTWoiePShaoe26a0bzoDMTuEO4aFIFZG48Vel_Pb1Gk5a2lIkhdAy9umvhTjhfoxRC1whWtVWXwupn1FiAImk9xjAX6Q", user-agent:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36", accept:"*/*", sec-fetch-site:"cross-site", sec-fetch-mode:"cors", accept-encoding:"gzip, deflate, br", accept-language:"pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7", cookie:"SESSION=c880f363-7890-484d-8111-3ced09807017; XSRF-TOKEN=jbod1qpidi7hdebd4179qthckn; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBVzcwVDNkYlZrSk9EdG42UDhJQiIsInN1YiI6IlV1aWRuY2lRVVVzN1pkM0tQdkZEIiwiaWF0IjoxNTc2MDU2ODc4LCJleHAiOjE1NzYzMTcxNDgsImxhc3RSZWZyZXNoVGltZSI6MTU3NjA1Njg3ODkzNCwieHNyZlRva2VuIjoiamJvZDFxcGlkaTdoZGViZDQxNzlxdGhja24ifQ.tpa_-8JTNoev1vujNO9zl781AmWYyKybiXNe_USX-Ow", secret:"??C???????", forwarded:"proto=http;host="localhost:8080";for="0:0:0:0:0:0:0:1:49554"", x-forwarded-for:"0:0:0:0:0:0:0:1", x-forwarded-proto:"http", x-forwarded-prefix:"/customer", x-forwarded-port:"8080", x-forwarded-host:"localhost:8080", content-length:"0"]]
+14:13:18.786 DEBUG REQ:GET /test, headers=[host:"localhost:8080", authorization:"Basic eyJraWQiOiIyTEI1a2tSNVdET3dYNkMxMGRLVVc2Vm0yVm1QQ25CaEdNdGFtZ25VZW9BPSIsImFsZyI6IlJTMjU2In0.eyJhdF9oYXNoIjoiWS1ucnVOcWNpNUYxVXdvSkx2XzEwdyIsInN1YiI6IjMwYWEwNDg1LTY0NWItNGI3NS04YTA0LTNiNmIzNmI3ZmMyNSIsImF1ZCI6Ijd1bnE0MmkyM2Y2OGR2OGVqYWcwbG1lZnFjIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNTc0MjkwNzU5LCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtd2VzdC0xLmFtYXpvbmF3cy5jb21cL2V1LXdlc3QtMV9NejVtT0ZsSXEiLCJjb2duaXRvOnVzZXJuYW1lIjoiZmVsaXBlIiwiZXhwIjoxNTc0Mjk0MzU5LCJpYXQiOjE1NzQyOTA3NTksImVtYWlsIjoiZmVsaXBlLm1lcmlnYUBnbWFpbC5jb20ifQ.n0tkdkpDsGsss8YAArnWPABXKmUCdihibXy1lAvZj0CiJ4SsiZyxIr8MlB-bdFeiODZFOAeUbnfF_N1VHV1N8NnBXhlcw-VInW39DmK-dIrPnw3ykRQgjszOpxsJdza2YnfGakiy0T_zHbBMip8fPgUNHBvBQh2uWVzOiRIqvCEF_eL7_8QJbqLMHLXgVD7IXOpcwZTiEIWn0FKtw7WruLVRMa_jS1P-vylVYCf_ZMz1E-Mdgu7kXWuWXXNTWoiePShaoe26a0bzoDMTuEO4aFIFZG48Vel_Pb1Gk5a2lIkhdAy9umvhTjhfoxRC1whWtVWXwupn1FiAImk9xjAX6Q", user-agent:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36", accept:"*/*", sec-fetch-site:"cross-site", sec-fetch-mode:"cors", accept-encoding:"gzip, deflate, br", accept-language:"pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7", cookie:"SESSION=c880f363-7890-484d-8111-3ced09807017; XSRF-TOKEN=jbod1qpidi7hdebd4179qthckn; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBVzcwVDNkYlZrSk9EdG42UDhJQiIsInN1YiI6IlV1aWRuY2lRVVVzN1pkM0tQdkZEIiwiaWF0IjoxNTc2MDU2ODc4LCJleHAiOjE1NzYzMTcxNDgsImxhc3RSZWZyZXNoVGltZSI6MTU3NjA1Njg3ODkzNCwieHNyZlRva2VuIjoiamJvZDFxcGlkaTdoZGViZDQxNzlxdGhja24ifQ.tpa_-8JTNoev1vujNO9zl781AmWYyKybiXNe_USX-Ow", secret:"??C???????", forwarded:"proto=http;host="localhost:8080";for="0:0:0:0:0:0:0:1:49554"", x-forwarded-for:"0:0:0:0:0:0:0:1", x-forwarded-proto:"http", x-forwarded-prefix:"/customer", x-forwarded-port:"8080", x-forwarded-host:"localhost:8080", content-length:"0"]]
+14:13:19.545 DEBUG Before request [GET /test, headers=[host:"localhost:8080", authorization:"Basic eyJraWQiOiIyTEI1a2tSNVdET3dYNkMxMGRLVVc2Vm0yVm1QQ25CaEdNdGFtZ25VZW9BPSIsImFsZyI6IlJTMjU2In0.eyJhdF9oYXNoIjoiWS1ucnVOcWNpNUYxVXdvSkx2XzEwdyIsInN1YiI6IjMwYWEwNDg1LTY0NWItNGI3NS04YTA0LTNiNmIzNmI3ZmMyNSIsImF1ZCI6Ijd1bnE0MmkyM2Y2OGR2OGVqYWcwbG1lZnFjIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNTc0MjkwNzU5LCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtd2VzdC0xLmFtYXpvbmF3cy5jb21cL2V1LXdlc3QtMV9NejVtT0ZsSXEiLCJjb2duaXRvOnVzZXJuYW1lIjoiZmVsaXBlIiwiZXhwIjoxNTc0Mjk0MzU5LCJpYXQiOjE1NzQyOTA3NTksImVtYWlsIjoiZmVsaXBlLm1lcmlnYUBnbWFpbC5jb20ifQ.n0tkdkpDsGsss8YAArnWPABXKmUCdihibXy1lAvZj0CiJ4SsiZyxIr8MlB-bdFeiODZFOAeUbnfF_N1VHV1N8NnBXhlcw-VInW39DmK-dIrPnw3ykRQgjszOpxsJdza2YnfGakiy0T_zHbBMip8fPgUNHBvBQh2uWVzOiRIqvCEF_eL7_8QJbqLMHLXgVD7IXOpcwZTiEIWn0FKtw7WruLVRMa_jS1P-vylVYCf_ZMz1E-Mdgu7kXWuWXXNTWoiePShaoe26a0bzoDMTuEO4aFIFZG48Vel_Pb1Gk5a2lIkhdAy9umvhTjhfoxRC1whWtVWXwupn1FiAImk9xjAX6Q", user-agent:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36", accept:"*/*", sec-fetch-site:"cross-site", sec-fetch-mode:"cors", accept-encoding:"gzip, deflate, br", accept-language:"pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7", cookie:"SESSION=c880f363-7890-484d-8111-3ced09807017; XSRF-TOKEN=jbod1qpidi7hdebd4179qthckn; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBVzcwVDNkYlZrSk9EdG42UDhJQiIsInN1YiI6IlV1aWRuY2lRVVVzN1pkM0tQdkZEIiwiaWF0IjoxNTc2MDU2ODc4LCJleHAiOjE1NzYzMTcxNDgsImxhc3RSZWZyZXNoVGltZSI6MTU3NjA1Njg3ODkzNCwieHNyZlRva2VuIjoiamJvZDFxcGlkaTdoZGViZDQxNzlxdGhja24ifQ.tpa_-8JTNoev1vujNO9zl781AmWYyKybiXNe_USX-Ow", secret:"??)???????", forwarded:"proto=http;host="localhost:8080";for="0:0:0:0:0:0:0:1:49554"", x-forwarded-for:"0:0:0:0:0:0:0:1", x-forwarded-proto:"http", x-forwarded-prefix:"/customer", x-forwarded-port:"8080", x-forwarded-host:"localhost:8080", content-length:"0"]]
+14:13:19.546 DEBUG REQ:GET /test, headers=[host:"localhost:8080", authorization:"Basic eyJraWQiOiIyTEI1a2tSNVdET3dYNkMxMGRLVVc2Vm0yVm1QQ25CaEdNdGFtZ25VZW9BPSIsImFsZyI6IlJTMjU2In0.eyJhdF9oYXNoIjoiWS1ucnVOcWNpNUYxVXdvSkx2XzEwdyIsInN1YiI6IjMwYWEwNDg1LTY0NWItNGI3NS04YTA0LTNiNmIzNmI3ZmMyNSIsImF1ZCI6Ijd1bnE0MmkyM2Y2OGR2OGVqYWcwbG1lZnFjIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNTc0MjkwNzU5LCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtd2VzdC0xLmFtYXpvbmF3cy5jb21cL2V1LXdlc3QtMV9NejVtT0ZsSXEiLCJjb2duaXRvOnVzZXJuYW1lIjoiZmVsaXBlIiwiZXhwIjoxNTc0Mjk0MzU5LCJpYXQiOjE1NzQyOTA3NTksImVtYWlsIjoiZmVsaXBlLm1lcmlnYUBnbWFpbC5jb20ifQ.n0tkdkpDsGsss8YAArnWPABXKmUCdihibXy1lAvZj0CiJ4SsiZyxIr8MlB-bdFeiODZFOAeUbnfF_N1VHV1N8NnBXhlcw-VInW39DmK-dIrPnw3ykRQgjszOpxsJdza2YnfGakiy0T_zHbBMip8fPgUNHBvBQh2uWVzOiRIqvCEF_eL7_8QJbqLMHLXgVD7IXOpcwZTiEIWn0FKtw7WruLVRMa_jS1P-vylVYCf_ZMz1E-Mdgu7kXWuWXXNTWoiePShaoe26a0bzoDMTuEO4aFIFZG48Vel_Pb1Gk5a2lIkhdAy9umvhTjhfoxRC1whWtVWXwupn1FiAImk9xjAX6Q", user-agent:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36", accept:"*/*", sec-fetch-site:"cross-site", sec-fetch-mode:"cors", accept-encoding:"gzip, deflate, br", accept-language:"pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7", cookie:"SESSION=c880f363-7890-484d-8111-3ced09807017; XSRF-TOKEN=jbod1qpidi7hdebd4179qthckn; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBVzcwVDNkYlZrSk9EdG42UDhJQiIsInN1YiI6IlV1aWRuY2lRVVVzN1pkM0tQdkZEIiwiaWF0IjoxNTc2MDU2ODc4LCJleHAiOjE1NzYzMTcxNDgsImxhc3RSZWZyZXNoVGltZSI6MTU3NjA1Njg3ODkzNCwieHNyZlRva2VuIjoiamJvZDFxcGlkaTdoZGViZDQxNzlxdGhja24ifQ.tpa_-8JTNoev1vujNO9zl781AmWYyKybiXNe_USX-Ow", secret:"??)???????", forwarded:"proto=http;host="localhost:8080";for="0:0:0:0:0:0:0:1:49554"", x-forwarded-for:"0:0:0:0:0:0:0:1", x-forwarded-proto:"http", x-forwarded-prefix:"/customer", x-forwarded-port:"8080", x-forwarded-host:"localhost:8080", content-length:"0"]]
+14:13:20.488 DEBUG Before request [GET /test, headers=[host:"localhost:8080", authorization:"Basic eyJraWQiOiIyTEI1a2tSNVdET3dYNkMxMGRLVVc2Vm0yVm1QQ25CaEdNdGFtZ25VZW9BPSIsImFsZyI6IlJTMjU2In0.eyJhdF9oYXNoIjoiWS1ucnVOcWNpNUYxVXdvSkx2XzEwdyIsInN1YiI6IjMwYWEwNDg1LTY0NWItNGI3NS04YTA0LTNiNmIzNmI3ZmMyNSIsImF1ZCI6Ijd1bnE0MmkyM2Y2OGR2OGVqYWcwbG1lZnFjIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNTc0MjkwNzU5LCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtd2VzdC0xLmFtYXpvbmF3cy5jb21cL2V1LXdlc3QtMV9NejVtT0ZsSXEiLCJjb2duaXRvOnVzZXJuYW1lIjoiZmVsaXBlIiwiZXhwIjoxNTc0Mjk0MzU5LCJpYXQiOjE1NzQyOTA3NTksImVtYWlsIjoiZmVsaXBlLm1lcmlnYUBnbWFpbC5jb20ifQ.n0tkdkpDsGsss8YAArnWPABXKmUCdihibXy1lAvZj0CiJ4SsiZyxIr8MlB-bdFeiODZFOAeUbnfF_N1VHV1N8NnBXhlcw-VInW39DmK-dIrPnw3ykRQgjszOpxsJdza2YnfGakiy0T_zHbBMip8fPgUNHBvBQh2uWVzOiRIqvCEF_eL7_8QJbqLMHLXgVD7IXOpcwZTiEIWn0FKtw7WruLVRMa_jS1P-vylVYCf_ZMz1E-Mdgu7kXWuWXXNTWoiePShaoe26a0bzoDMTuEO4aFIFZG48Vel_Pb1Gk5a2lIkhdAy9umvhTjhfoxRC1whWtVWXwupn1FiAImk9xjAX6Q", user-agent:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36", accept:"*/*", sec-fetch-site:"cross-site", sec-fetch-mode:"cors", accept-encoding:"gzip, deflate, br", accept-language:"pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7", cookie:"SESSION=c880f363-7890-484d-8111-3ced09807017; XSRF-TOKEN=jbod1qpidi7hdebd4179qthckn; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBVzcwVDNkYlZrSk9EdG42UDhJQiIsInN1YiI6IlV1aWRuY2lRVVVzN1pkM0tQdkZEIiwiaWF0IjoxNTc2MDU2ODc4LCJleHAiOjE1NzYzMTcxNDgsImxhc3RSZWZyZXNoVGltZSI6MTU3NjA1Njg3ODkzNCwieHNyZlRva2VuIjoiamJvZDFxcGlkaTdoZGViZDQxNzlxdGhja24ifQ.tpa_-8JTNoev1vujNO9zl781AmWYyKybiXNe_USX-Ow", secret:"??????????", forwarded:"proto=http;host="localhost:8080";for="0:0:0:0:0:0:0:1:49554"", x-forwarded-for:"0:0:0:0:0:0:0:1", x-forwarded-proto:"http", x-forwarded-prefix:"/customer", x-forwarded-port:"8080", x-forwarded-host:"localhost:8080", content-length:"0"]]
+14:13:20.489 DEBUG REQ:GET /test, headers=[host:"localhost:8080", authorization:"Basic eyJraWQiOiIyTEI1a2tSNVdET3dYNkMxMGRLVVc2Vm0yVm1QQ25CaEdNdGFtZ25VZW9BPSIsImFsZyI6IlJTMjU2In0.eyJhdF9oYXNoIjoiWS1ucnVOcWNpNUYxVXdvSkx2XzEwdyIsInN1YiI6IjMwYWEwNDg1LTY0NWItNGI3NS04YTA0LTNiNmIzNmI3ZmMyNSIsImF1ZCI6Ijd1bnE0MmkyM2Y2OGR2OGVqYWcwbG1lZnFjIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNTc0MjkwNzU5LCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtd2VzdC0xLmFtYXpvbmF3cy5jb21cL2V1LXdlc3QtMV9NejVtT0ZsSXEiLCJjb2duaXRvOnVzZXJuYW1lIjoiZmVsaXBlIiwiZXhwIjoxNTc0Mjk0MzU5LCJpYXQiOjE1NzQyOTA3NTksImVtYWlsIjoiZmVsaXBlLm1lcmlnYUBnbWFpbC5jb20ifQ.n0tkdkpDsGsss8YAArnWPABXKmUCdihibXy1lAvZj0CiJ4SsiZyxIr8MlB-bdFeiODZFOAeUbnfF_N1VHV1N8NnBXhlcw-VInW39DmK-dIrPnw3ykRQgjszOpxsJdza2YnfGakiy0T_zHbBMip8fPgUNHBvBQh2uWVzOiRIqvCEF_eL7_8QJbqLMHLXgVD7IXOpcwZTiEIWn0FKtw7WruLVRMa_jS1P-vylVYCf_ZMz1E-Mdgu7kXWuWXXNTWoiePShaoe26a0bzoDMTuEO4aFIFZG48Vel_Pb1Gk5a2lIkhdAy9umvhTjhfoxRC1whWtVWXwupn1FiAImk9xjAX6Q", user-agent:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36", accept:"*/*", sec-fetch-site:"cross-site", sec-fetch-mode:"cors", accept-encoding:"gzip, deflate, br", accept-language:"pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7", cookie:"SESSION=c880f363-7890-484d-8111-3ced09807017; XSRF-TOKEN=jbod1qpidi7hdebd4179qthckn; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBVzcwVDNkYlZrSk9EdG42UDhJQiIsInN1YiI6IlV1aWRuY2lRVVVzN1pkM0tQdkZEIiwiaWF0IjoxNTc2MDU2ODc4LCJleHAiOjE1NzYzMTcxNDgsImxhc3RSZWZyZXNoVGltZSI6MTU3NjA1Njg3ODkzNCwieHNyZlRva2VuIjoiamJvZDFxcGlkaTdoZGViZDQxNzlxdGhja24ifQ.tpa_-8JTNoev1vujNO9zl781AmWYyKybiXNe_USX-Ow", secret:"??????????", forwarded:"proto=http;host="localhost:8080";for="0:0:0:0:0:0:0:1:49554"", x-forwarded-for:"0:0:0:0:0:0:0:1", x-forwarded-proto:"http", x-forwarded-prefix:"/customer", x-forwarded-port:"8080", x-forwarded-host:"localhost:8080", content-length:"0"]]
+14:13:21.246 DEBUG Before request [GET /test, headers=[host:"localhost:8080", authorization:"Basic eyJraWQiOiIyTEI1a2tSNVdET3dYNkMxMGRLVVc2Vm0yVm1QQ25CaEdNdGFtZ25VZW9BPSIsImFsZyI6IlJTMjU2In0.eyJhdF9oYXNoIjoiWS1ucnVOcWNpNUYxVXdvSkx2XzEwdyIsInN1YiI6IjMwYWEwNDg1LTY0NWItNGI3NS04YTA0LTNiNmIzNmI3ZmMyNSIsImF1ZCI6Ijd1bnE0MmkyM2Y2OGR2OGVqYWcwbG1lZnFjIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNTc0MjkwNzU5LCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtd2VzdC0xLmFtYXpvbmF3cy5jb21cL2V1LXdlc3QtMV9NejVtT0ZsSXEiLCJjb2duaXRvOnVzZXJuYW1lIjoiZmVsaXBlIiwiZXhwIjoxNTc0Mjk0MzU5LCJpYXQiOjE1NzQyOTA3NTksImVtYWlsIjoiZmVsaXBlLm1lcmlnYUBnbWFpbC5jb20ifQ.n0tkdkpDsGsss8YAArnWPABXKmUCdihibXy1lAvZj0CiJ4SsiZyxIr8MlB-bdFeiODZFOAeUbnfF_N1VHV1N8NnBXhlcw-VInW39DmK-dIrPnw3ykRQgjszOpxsJdza2YnfGakiy0T_zHbBMip8fPgUNHBvBQh2uWVzOiRIqvCEF_eL7_8QJbqLMHLXgVD7IXOpcwZTiEIWn0FKtw7WruLVRMa_jS1P-vylVYCf_ZMz1E-Mdgu7kXWuWXXNTWoiePShaoe26a0bzoDMTuEO4aFIFZG48Vel_Pb1Gk5a2lIkhdAy9umvhTjhfoxRC1whWtVWXwupn1FiAImk9xjAX6Q", user-agent:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36", accept:"*/*", sec-fetch-site:"cross-site", sec-fetch-mode:"cors", accept-encoding:"gzip, deflate, br", accept-language:"pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7", cookie:"SESSION=c880f363-7890-484d-8111-3ced09807017; XSRF-TOKEN=jbod1qpidi7hdebd4179qthckn; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBVzcwVDNkYlZrSk9EdG42UDhJQiIsInN1YiI6IlV1aWRuY2lRVVVzN1pkM0tQdkZEIiwiaWF0IjoxNTc2MDU2ODc4LCJleHAiOjE1NzYzMTcxNDgsImxhc3RSZWZyZXNoVGltZSI6MTU3NjA1Njg3ODkzNCwieHNyZlRva2VuIjoiamJvZDFxcGlkaTdoZGViZDQxNzlxdGhja24ifQ.tpa_-8JTNoev1vujNO9zl781AmWYyKybiXNe_USX-Ow", secret:"??????????", forwarded:"proto=http;host="localhost:8080";for="0:0:0:0:0:0:0:1:49554"", x-forwarded-for:"0:0:0:0:0:0:0:1", x-forwarded-proto:"http", x-forwarded-prefix:"/customer", x-forwarded-port:"8080", x-forwarded-host:"localhost:8080", content-length:"0"]]
+14:13:21.247 DEBUG REQ:GET /test, headers=[host:"localhost:8080", authorization:"Basic eyJraWQiOiIyTEI1a2tSNVdET3dYNkMxMGRLVVc2Vm0yVm1QQ25CaEdNdGFtZ25VZW9BPSIsImFsZyI6IlJTMjU2In0.eyJhdF9oYXNoIjoiWS1ucnVOcWNpNUYxVXdvSkx2XzEwdyIsInN1YiI6IjMwYWEwNDg1LTY0NWItNGI3NS04YTA0LTNiNmIzNmI3ZmMyNSIsImF1ZCI6Ijd1bnE0MmkyM2Y2OGR2OGVqYWcwbG1lZnFjIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNTc0MjkwNzU5LCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtd2VzdC0xLmFtYXpvbmF3cy5jb21cL2V1LXdlc3QtMV9NejVtT0ZsSXEiLCJjb2duaXRvOnVzZXJuYW1lIjoiZmVsaXBlIiwiZXhwIjoxNTc0Mjk0MzU5LCJpYXQiOjE1NzQyOTA3NTksImVtYWlsIjoiZmVsaXBlLm1lcmlnYUBnbWFpbC5jb20ifQ.n0tkdkpDsGsss8YAArnWPABXKmUCdihibXy1lAvZj0CiJ4SsiZyxIr8MlB-bdFeiODZFOAeUbnfF_N1VHV1N8NnBXhlcw-VInW39DmK-dIrPnw3ykRQgjszOpxsJdza2YnfGakiy0T_zHbBMip8fPgUNHBvBQh2uWVzOiRIqvCEF_eL7_8QJbqLMHLXgVD7IXOpcwZTiEIWn0FKtw7WruLVRMa_jS1P-vylVYCf_ZMz1E-Mdgu7kXWuWXXNTWoiePShaoe26a0bzoDMTuEO4aFIFZG48Vel_Pb1Gk5a2lIkhdAy9umvhTjhfoxRC1whWtVWXwupn1FiAImk9xjAX6Q", user-agent:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36", accept:"*/*", sec-fetch-site:"cross-site", sec-fetch-mode:"cors", accept-encoding:"gzip, deflate, br", accept-language:"pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7", cookie:"SESSION=c880f363-7890-484d-8111-3ced09807017; XSRF-TOKEN=jbod1qpidi7hdebd4179qthckn; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBVzcwVDNkYlZrSk9EdG42UDhJQiIsInN1YiI6IlV1aWRuY2lRVVVzN1pkM0tQdkZEIiwiaWF0IjoxNTc2MDU2ODc4LCJleHAiOjE1NzYzMTcxNDgsImxhc3RSZWZyZXNoVGltZSI6MTU3NjA1Njg3ODkzNCwieHNyZlRva2VuIjoiamJvZDFxcGlkaTdoZGViZDQxNzlxdGhja24ifQ.tpa_-8JTNoev1vujNO9zl781AmWYyKybiXNe_USX-Ow", secret:"??????????", forwarded:"proto=http;host="localhost:8080";for="0:0:0:0:0:0:0:1:49554"", x-forwarded-for:"0:0:0:0:0:0:0:1", x-forwarded-proto:"http", x-forwarded-prefix:"/customer", x-forwarded-port:"8080", x-forwarded-host:"localhost:8080", content-length:"0"]]
+14:13:28.752 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:13:28.762 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:13:38.753 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:13:38.762 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:13:48.756 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:13:48.770 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:13:58.763 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:13:58.774 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:14:08.766 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:14:08.774 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:14:18.766 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:14:18.777 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:14:28.769 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:14:28.778 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:14:38.772 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:14:38.779 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:14:48.774 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:14:48.784 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:14:58.778 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:14:58.787 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:15:08.780 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:15:08.788 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:15:18.779 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:15:18.785 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:15:28.777 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:15:28.787 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:15:38.781 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:15:38.791 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:15:48.782 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:15:48.792 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:15:58.787 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:15:58.797 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:16:08.791 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:16:08.802 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:16:18.795 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:16:18.806 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:16:28.798 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:16:28.806 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:16:38.800 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:16:38.808 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:16:48.802 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:16:48.810 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:16:58.803 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:16:58.811 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:17:08.804 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:17:08.811 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:17:18.808 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:17:18.816 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:17:28.808 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:17:28.819 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:17:38.811 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:17:38.821 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:17:48.816 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:17:48.826 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:17:58.818 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:17:58.826 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:18:08.819 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:18:08.830 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:18:18.822 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:18:18.832 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:18:28.825 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:18:28.838 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:18:38.831 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:18:38.841 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:18:48.833 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:18:48.842 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:18:58.835 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:18:58.845 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:19:08.837 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:19:08.845 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:19:18.836 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:19:18.845 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:19:28.836 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:19:28.843 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:19:38.837 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:19:38.845 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:19:48.837 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:19:48.846 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:19:58.839 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:19:58.850 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:20:08.843 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:20:08.853 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:20:18.847 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:20:18.853 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:20:28.847 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:20:28.856 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:20:38.848 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:20:38.856 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:20:48.851 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:20:48.858 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:20:58.850 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:20:58.858 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:21:08.849 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:21:08.857 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:21:18.850 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:21:18.860 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:21:28.853 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:21:28.862 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:21:38.854 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:21:38.864 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:21:48.856 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:21:48.865 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:21:58.858 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:21:58.867 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:22:08.860 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:22:08.868 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:22:18.860 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:22:18.869 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:22:28.860 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:22:28.867 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:22:38.860 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:22:38.870 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:22:48.862 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:22:48.870 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:22:58.863 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:22:58.872 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:23:08.864 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:23:08.872 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:23:18.865 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:23:18.877 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:23:28.869 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:23:28.875 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:23:38.869 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:23:38.879 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:23:48.871 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:23:48.879 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:23:58.871 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:23:58.878 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:24:08.871 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:24:08.882 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:24:18.878 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:24:18.887 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:24:28.880 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:24:28.890 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:24:38.884 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:24:38.895 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:24:48.887 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:24:48.895 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:24:58.887 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:24:58.893 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:25:08.886 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:25:08.896 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:25:18.888 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:25:18.894 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:25:28.887 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:25:28.894 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:25:38.886 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:25:38.893 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:25:48.885 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:25:48.895 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:25:58.888 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:25:58.897 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:26:08.889 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:26:08.896 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:26:18.888 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:26:18.897 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:26:28.889 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:26:28.895 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:26:38.887 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:26:38.894 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:26:48.886 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:26:48.897 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:26:58.889 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:26:58.898 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:27:08.891 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:27:08.897 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:27:18.888 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:27:18.894 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:27:28.887 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:27:28.897 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:27:38.889 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:27:38.896 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:27:48.888 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:27:48.893 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:27:58.885 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:27:58.896 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:28:08.889 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:28:08.898 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:28:18.892 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:28:18.904 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:28:28.896 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:28:28.904 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:28:38.898 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:28:38.910 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:28:48.902 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:28:48.910 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:28:58.904 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:28:58.911 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:49610", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:29:04.596 INFO  stopped org.springframework.cloud.consul.binder.ConsulInboundMessageProducer@44cab872
+14:29:04.596 INFO  Removing {message-handler:outbound.springCloudBus} as a subscriber to the 'springCloudBusOutput' channel
+14:29:04.596 INFO  Channel 'customer-service-1.springCloudBusOutput' has 0 subscriber(s).
+14:29:04.596 INFO  stopped bean 'outbound.springCloudBus'
+14:29:04.596 INFO  Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+14:29:04.597 INFO  Channel 'customer-service-1.errorChannel' has 0 subscriber(s).
+14:29:04.597 INFO  stopped bean '_org.springframework.integration.errorLogger'
+14:29:04.598 INFO  Shutting down ExecutorService 'catalogWatchTaskScheduler'
+14:29:04.598 INFO  Shutting down ExecutorService 'configWatchTaskScheduler'
+14:29:04.599 INFO  Shutting down ExecutorService 'applicationTaskExecutor'
+14:29:04.601 INFO  Deregistering service with consul: customer-service-8de5c288b54ad1542911c86f2fbca572
+14:29:04.610 INFO  Shutting down ExecutorService 'taskScheduler'
+14:29:04.612 INFO  Summary on shutdown: bean 'springCloudBusInput'
+14:29:04.612 INFO  Summary on shutdown: bean 'springCloudBusOutput'
+14:29:04.612 INFO  Summary on shutdown: nullChannel
+14:29:04.612 INFO  Summary on shutdown: bean 'errorChannel'
+14:29:04.612 INFO  Summary on shutdown: bean '_org.springframework.integration.errorLogger.handler' for component '_org.springframework.integration.errorLogger'
+14:29:04.612 INFO  Summary on shutdown: org.springframework.cloud.stream.binding.StreamListenerMessageHandler@7866fe3e
+14:30:16.627 INFO  Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$d82edbd3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:30:16.630 INFO  Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$fe8546ab] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:30:21.373 INFO  Located property source: CompositePropertySource {name='consul', propertySources=[ConsulPropertySource {name='config/customer-service,zone5/'}, ConsulPropertySource {name='config/customer-service/'}, ConsulPropertySource {name='config/application,zone5/'}, ConsulPropertySource {name='config/application/'}]}
+14:30:26.333 INFO  The following profiles are active: zone5
+14:30:26.761 WARN  Endpoint ID 'bus-env' contains invalid characters, please migrate to a valid format.
+14:30:26.894 WARN  Endpoint ID 'bus-refresh' contains invalid characters, please migrate to a valid format.
+14:30:26.923 WARN  Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+14:30:27.085 INFO  BeanFactory id=e53f2605-2457-33a7-89c4-356f9dd2537e
+14:30:27.140 INFO  No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+14:30:27.145 INFO  No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+14:30:27.148 INFO  No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+14:30:27.176 INFO  Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$d82edbd3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:30:27.306 INFO  Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:30:27.311 INFO  Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:30:27.332 INFO  Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:30:27.342 INFO  Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:30:27.350 INFO  Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:30:27.353 INFO  Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:30:27.387 INFO  Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$fe8546ab] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:30:27.633 INFO  Tomcat initialized with port(s): 0 (http)
+14:30:27.640 INFO  Initializing ProtocolHandler ["http-nio-auto-1"]
+14:30:27.641 INFO  Starting service [Tomcat]
+14:30:27.641 INFO  Starting Servlet engine: [Apache Tomcat/9.0.27]
+14:30:27.717 INFO  Initializing Spring embedded WebApplicationContext
+14:30:27.717 INFO  Root WebApplicationContext: initialization completed in 1375 ms
+14:30:27.815 WARN  No URLs will be polled as dynamic configuration sources.
+14:30:27.815 INFO  To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+14:30:27.821 INFO  DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@6b0ba697
+14:30:28.255 INFO  Initializing ExecutorService 'taskScheduler'
+14:30:28.584 DEBUG Filter 'requestLoggingFilter' configured for use
+14:30:28.764 WARN  No URLs will be polled as dynamic configuration sources.
+14:30:28.764 INFO  To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+14:30:28.862 INFO  Initializing ExecutorService 'applicationTaskExecutor'
+14:30:29.142 INFO  Looking up function 'null' with acceptedOutputTypes: []
+14:30:29.325 WARN  You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+14:30:29.398 INFO  Initializing ExecutorService 'configWatchTaskScheduler'
+14:30:29.410 INFO  Initializing ExecutorService 'catalogWatchTaskScheduler'
+14:30:29.490 INFO  Exposing 2 endpoint(s) beneath base path '/actuator'
+14:30:29.611 INFO  Channel 'customer-service-1.springCloudBusInput' has 1 subscriber(s).
+14:30:29.670 INFO  Registering MessageChannel errorChannel
+14:30:29.710 INFO  Registering MessageChannel springCloudBusInput
+14:30:29.731 INFO  Registering MessageChannel springCloudBusOutput
+14:30:29.738 INFO  Registering MessageChannel nullChannel
+14:30:29.753 INFO  Registering MessageHandler errorLogger
+14:30:29.767 INFO  Registering MessageHandler org.springframework.cloud.stream.binding.StreamListenerMessageHandler@57a0aeb8
+14:30:29.830 INFO  Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+14:30:29.830 INFO  Channel 'customer-service-1.errorChannel' has 1 subscriber(s).
+14:30:29.831 INFO  started bean '_org.springframework.integration.errorLogger'
+14:30:31.369 INFO  Located property source: CompositePropertySource {name='consul', propertySources=[ConsulPropertySource {name='config/customer-service,zone5/'}, ConsulPropertySource {name='config/customer-service/'}, ConsulPropertySource {name='config/application,zone5/'}, ConsulPropertySource {name='config/application/'}]}
+14:30:36.383 INFO  Adding {message-handler:outbound.springCloudBus} as a subscriber to the 'springCloudBusOutput' channel
+14:30:36.383 INFO  Channel 'customer-service-1.springCloudBusOutput' has 1 subscriber(s).
+14:30:36.383 INFO  started bean 'outbound.springCloudBus'
+14:30:36.392 INFO  started org.springframework.cloud.consul.binder.ConsulInboundMessageProducer@3891db3a
+14:30:36.415 INFO  Starting ProtocolHandler ["http-nio-auto-1"]
+14:30:36.432 INFO  Tomcat started on port(s): 50373 (http) with context path ''
+14:30:36.441 INFO  Registering service with consul: NewService{id='customer-service-8a420272ac1c74b88932618652136ee0', name='customer-service', tags=[secure=false], address='192.168.0.164', meta=null, port=50373, enableTagOverride=null, check=Check{script='null', interval='10s', ttl='null', http='http://192.168.0.164:50373/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null'}, checks=null}
+14:30:36.456 INFO  Started CustomerApplication in 20.54 seconds (JVM running for 21.078)
+14:30:36.707 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:30:36.709 INFO  Initializing Servlet 'dispatcherServlet'
+14:30:36.724 INFO  Completed initialization in 15 ms
+14:30:41.030 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:50373", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:30:41.063 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:50373", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:30:51.058 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:50373", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:30:51.069 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:50373", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:31:01.063 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:50373", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:31:01.075 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:50373", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:31:11.067 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:50373", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:31:11.079 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:50373", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:31:13.786 INFO  stopped org.springframework.cloud.consul.binder.ConsulInboundMessageProducer@3891db3a
+14:31:13.786 INFO  Removing {message-handler:outbound.springCloudBus} as a subscriber to the 'springCloudBusOutput' channel
+14:31:13.786 INFO  Channel 'customer-service-1.springCloudBusOutput' has 0 subscriber(s).
+14:31:13.786 INFO  stopped bean 'outbound.springCloudBus'
+14:31:13.786 INFO  Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+14:31:13.786 INFO  Channel 'customer-service-1.errorChannel' has 0 subscriber(s).
+14:31:13.786 INFO  stopped bean '_org.springframework.integration.errorLogger'
+14:31:13.787 INFO  Shutting down ExecutorService 'catalogWatchTaskScheduler'
+14:31:13.788 INFO  Shutting down ExecutorService 'configWatchTaskScheduler'
+14:31:13.789 INFO  Shutting down ExecutorService 'applicationTaskExecutor'
+14:31:13.790 INFO  Deregistering service with consul: customer-service-8a420272ac1c74b88932618652136ee0
+14:31:13.800 INFO  Shutting down ExecutorService 'taskScheduler'
+14:31:13.802 INFO  Summary on shutdown: bean 'errorChannel'
+14:31:13.802 INFO  Summary on shutdown: bean 'springCloudBusInput'
+14:31:13.802 INFO  Summary on shutdown: bean 'springCloudBusOutput'
+14:31:13.802 INFO  Summary on shutdown: nullChannel
+14:31:13.802 INFO  Summary on shutdown: bean '_org.springframework.integration.errorLogger.handler' for component '_org.springframework.integration.errorLogger'
+14:31:13.802 INFO  Summary on shutdown: org.springframework.cloud.stream.binding.StreamListenerMessageHandler@57a0aeb8
+14:31:16.240 INFO  Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$85b2301b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:31:16.243 INFO  Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ac089af3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:31:20.999 INFO  Located property source: CompositePropertySource {name='consul', propertySources=[ConsulPropertySource {name='config/customer-service,zone2/'}, ConsulPropertySource {name='config/customer-service/'}, ConsulPropertySource {name='config/application,zone2/'}, ConsulPropertySource {name='config/application/'}]}
+14:31:25.965 INFO  The following profiles are active: zone2
+14:31:26.332 WARN  Endpoint ID 'bus-env' contains invalid characters, please migrate to a valid format.
+14:31:26.456 WARN  Endpoint ID 'bus-refresh' contains invalid characters, please migrate to a valid format.
+14:31:26.484 WARN  Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+14:31:26.633 INFO  BeanFactory id=e53f2605-2457-33a7-89c4-356f9dd2537e
+14:31:26.682 INFO  No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+14:31:26.687 INFO  No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+14:31:26.694 INFO  No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+14:31:26.721 INFO  Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$85b2301b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:31:26.837 INFO  Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:31:26.842 INFO  Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:31:26.863 INFO  Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:31:26.873 INFO  Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:31:26.881 INFO  Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:31:26.885 INFO  Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:31:26.918 INFO  Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ac089af3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:31:27.149 INFO  Tomcat initialized with port(s): 0 (http)
+14:31:27.155 INFO  Initializing ProtocolHandler ["http-nio-auto-1"]
+14:31:27.155 INFO  Starting service [Tomcat]
+14:31:27.155 INFO  Starting Servlet engine: [Apache Tomcat/9.0.27]
+14:31:27.227 INFO  Initializing Spring embedded WebApplicationContext
+14:31:27.227 INFO  Root WebApplicationContext: initialization completed in 1254 ms
+14:31:27.324 WARN  No URLs will be polled as dynamic configuration sources.
+14:31:27.324 INFO  To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+14:31:27.329 INFO  DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@5c25daad
+14:31:27.764 INFO  Initializing ExecutorService 'taskScheduler'
+14:31:28.076 DEBUG Filter 'requestLoggingFilter' configured for use
+14:31:28.258 WARN  No URLs will be polled as dynamic configuration sources.
+14:31:28.258 INFO  To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+14:31:28.354 INFO  Initializing ExecutorService 'applicationTaskExecutor'
+14:31:28.640 INFO  Looking up function 'null' with acceptedOutputTypes: []
+14:31:28.835 WARN  You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+14:31:28.907 INFO  Initializing ExecutorService 'configWatchTaskScheduler'
+14:31:28.919 INFO  Initializing ExecutorService 'catalogWatchTaskScheduler'
+14:31:28.995 INFO  Exposing 2 endpoint(s) beneath base path '/actuator'
+14:31:29.116 INFO  Channel 'customer-service-1.springCloudBusInput' has 1 subscriber(s).
+14:31:29.176 INFO  Registering MessageChannel nullChannel
+14:31:29.190 INFO  Registering MessageChannel errorChannel
+14:31:29.239 INFO  Registering MessageChannel springCloudBusInput
+14:31:29.258 INFO  Registering MessageChannel springCloudBusOutput
+14:31:29.272 INFO  Registering MessageHandler errorLogger
+14:31:29.285 INFO  Registering MessageHandler org.springframework.cloud.stream.binding.StreamListenerMessageHandler@779cb140
+14:31:29.354 INFO  Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+14:31:29.354 INFO  Channel 'customer-service-1.errorChannel' has 1 subscriber(s).
+14:31:29.354 INFO  started bean '_org.springframework.integration.errorLogger'
+14:31:30.992 INFO  Located property source: CompositePropertySource {name='consul', propertySources=[ConsulPropertySource {name='config/customer-service,zone2/'}, ConsulPropertySource {name='config/customer-service/'}, ConsulPropertySource {name='config/application,zone2/'}, ConsulPropertySource {name='config/application/'}]}
+14:31:36.012 INFO  Adding {message-handler:outbound.springCloudBus} as a subscriber to the 'springCloudBusOutput' channel
+14:31:36.013 INFO  Channel 'customer-service-1.springCloudBusOutput' has 1 subscriber(s).
+14:31:36.013 INFO  started bean 'outbound.springCloudBus'
+14:31:36.021 INFO  started org.springframework.cloud.consul.binder.ConsulInboundMessageProducer@6fb51e17
+14:31:36.044 INFO  Starting ProtocolHandler ["http-nio-auto-1"]
+14:31:36.061 INFO  Tomcat started on port(s): 50408 (http) with context path ''
+14:31:36.073 INFO  Registering service with consul: NewService{id='customer-service-16816d36dbdc0624dbc5574f6563fe2e', name='customer-service', tags=[zone=zone2, secure=false], address='192.168.0.164', meta=null, port=50408, enableTagOverride=null, check=Check{script='null', interval='10s', ttl='null', http='http://192.168.0.164:50408/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null'}, checks=null}
+14:31:36.090 INFO  Started CustomerApplication in 20.51 seconds (JVM running for 21.04)
+14:31:36.426 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:31:36.426 INFO  Initializing Servlet 'dispatcherServlet'
+14:31:36.442 INFO  Completed initialization in 16 ms
+14:31:36.772 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:50408", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:31:36.803 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:50408", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:31:46.797 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:50408", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:31:46.806 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:50408", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:31:56.799 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:50408", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:31:56.811 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:50408", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:32:06.805 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:50408", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:32:06.815 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:50408", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:32:16.808 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:50408", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:32:16.817 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:50408", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:32:26.810 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:50408", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:32:26.818 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:50408", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:32:36.812 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:50408", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:32:36.821 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:50408", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:32:46.813 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:50408", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:32:46.822 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:50408", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:32:56.813 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:50408", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:32:56.823 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:50408", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:33:06.815 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:50408", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:33:06.824 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:50408", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:33:16.816 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:50408", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:33:16.826 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:50408", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:33:26.817 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:50408", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:33:26.826 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:50408", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+14:33:26.850 INFO  stopped org.springframework.cloud.consul.binder.ConsulInboundMessageProducer@6fb51e17
+14:33:26.850 INFO  Removing {message-handler:outbound.springCloudBus} as a subscriber to the 'springCloudBusOutput' channel
+14:33:26.850 INFO  Channel 'customer-service-1.springCloudBusOutput' has 0 subscriber(s).
+14:33:26.850 INFO  stopped bean 'outbound.springCloudBus'
+14:33:26.850 INFO  Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+14:33:26.850 INFO  Channel 'customer-service-1.errorChannel' has 0 subscriber(s).
+14:33:26.850 INFO  stopped bean '_org.springframework.integration.errorLogger'
+14:33:26.851 INFO  Shutting down ExecutorService 'catalogWatchTaskScheduler'
+14:33:26.852 INFO  Shutting down ExecutorService 'configWatchTaskScheduler'
+14:33:26.853 INFO  Shutting down ExecutorService 'applicationTaskExecutor'
+14:33:26.854 INFO  Deregistering service with consul: customer-service-16816d36dbdc0624dbc5574f6563fe2e
+14:33:26.864 INFO  Shutting down ExecutorService 'taskScheduler'
+14:33:26.865 INFO  Summary on shutdown: nullChannel
+14:33:26.866 INFO  Summary on shutdown: bean 'errorChannel'
+14:33:26.866 INFO  Summary on shutdown: bean 'springCloudBusInput'
+14:33:26.866 INFO  Summary on shutdown: bean 'springCloudBusOutput'
+14:33:26.866 INFO  Summary on shutdown: bean '_org.springframework.integration.errorLogger.handler' for component '_org.springframework.integration.errorLogger'
+14:33:26.866 INFO  Summary on shutdown: org.springframework.cloud.stream.binding.StreamListenerMessageHandler@779cb140

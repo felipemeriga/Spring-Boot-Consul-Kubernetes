@@ -1,0 +1,489 @@
+22:25:37.121 INFO  Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$e78b666b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:25:37.126 INFO  Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$de1d143] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:25:41.942 INFO  Located property source: CompositePropertySource {name='consul', propertySources=[ConsulPropertySource {name='config/order-service/'}, ConsulPropertySource {name='config/application/'}]}
+22:25:46.807 INFO  No active profile set, falling back to default profiles: default
+22:25:47.302 WARN  Endpoint ID 'bus-env' contains invalid characters, please migrate to a valid format.
+22:25:47.455 WARN  Endpoint ID 'bus-refresh' contains invalid characters, please migrate to a valid format.
+22:25:47.483 WARN  Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+22:25:47.664 INFO  BeanFactory id=e34cba7f-c4e0-3e85-8bcd-230a9754abb0
+22:25:47.725 INFO  No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+22:25:47.730 INFO  No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+22:25:47.733 INFO  No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+22:25:47.767 INFO  Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$e78b666b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:25:47.898 INFO  Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:25:47.902 INFO  Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:25:47.922 INFO  Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:25:47.931 INFO  Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:25:47.940 INFO  Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:25:47.944 INFO  Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:25:47.973 INFO  Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$de1d143] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:25:48.206 INFO  Tomcat initialized with port(s): 9000 (http)
+22:25:48.213 INFO  Initializing ProtocolHandler ["http-nio-9000"]
+22:25:48.213 INFO  Starting service [Tomcat]
+22:25:48.213 INFO  Starting Servlet engine: [Apache Tomcat/9.0.27]
+22:25:48.286 INFO  Initializing Spring embedded WebApplicationContext
+22:25:48.286 INFO  Root WebApplicationContext: initialization completed in 1471 ms
+22:25:48.382 WARN  No URLs will be polled as dynamic configuration sources.
+22:25:48.383 INFO  To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:25:48.389 INFO  DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@16e5344c
+22:25:48.835 INFO  Initializing ExecutorService 'taskScheduler'
+22:25:49.153 DEBUG Filter 'requestLoggingFilter' configured for use
+22:25:49.400 WARN  No URLs will be polled as dynamic configuration sources.
+22:25:49.400 INFO  To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:25:49.507 INFO  Initializing ExecutorService 'applicationTaskExecutor'
+22:25:49.809 INFO  Looking up function 'null' with acceptedOutputTypes: []
+22:25:50.010 WARN  You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+22:25:50.094 INFO  Initializing ExecutorService 'configWatchTaskScheduler'
+22:25:50.106 INFO  Initializing ExecutorService 'catalogWatchTaskScheduler'
+22:25:50.191 INFO  Exposing 2 endpoint(s) beneath base path '/actuator'
+22:25:50.306 INFO  Channel 'order-service-1.springCloudBusInput' has 1 subscriber(s).
+22:25:50.361 INFO  Registering MessageChannel springCloudBusInput
+22:25:50.410 INFO  Registering MessageChannel springCloudBusOutput
+22:25:50.418 INFO  Registering MessageChannel nullChannel
+22:25:50.426 INFO  Registering MessageChannel errorChannel
+22:25:50.451 INFO  Registering MessageHandler org.springframework.cloud.stream.binding.StreamListenerMessageHandler@6662974a
+22:25:50.482 INFO  Registering MessageHandler errorLogger
+22:25:50.527 INFO  Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+22:25:50.527 INFO  Channel 'order-service-1.errorChannel' has 1 subscriber(s).
+22:25:50.527 INFO  started bean '_org.springframework.integration.errorLogger'
+22:25:51.891 INFO  Located property source: CompositePropertySource {name='consul', propertySources=[ConsulPropertySource {name='config/order-service/'}, ConsulPropertySource {name='config/application/'}]}
+22:27:12.547 INFO  Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$615413a4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:27:12.550 INFO  Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$87aa7e7c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:27:17.288 INFO  Located property source: CompositePropertySource {name='consul', propertySources=[ConsulPropertySource {name='config/order-service/'}, ConsulPropertySource {name='config/application/'}]}
+22:27:22.247 INFO  No active profile set, falling back to default profiles: default
+22:27:22.693 WARN  Endpoint ID 'bus-env' contains invalid characters, please migrate to a valid format.
+22:27:22.831 WARN  Endpoint ID 'bus-refresh' contains invalid characters, please migrate to a valid format.
+22:27:22.862 WARN  Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+22:27:23.026 INFO  BeanFactory id=e34cba7f-c4e0-3e85-8bcd-230a9754abb0
+22:27:23.086 INFO  No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+22:27:23.091 INFO  No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+22:27:23.093 INFO  No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+22:27:23.124 INFO  Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$615413a4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:27:23.265 INFO  Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:27:23.273 INFO  Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:27:23.294 INFO  Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:27:23.304 INFO  Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:27:23.311 INFO  Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:27:23.316 INFO  Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:27:23.348 INFO  Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$87aa7e7c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:27:23.621 INFO  Tomcat initialized with port(s): 9000 (http)
+22:27:23.628 INFO  Initializing ProtocolHandler ["http-nio-9000"]
+22:27:23.628 INFO  Starting service [Tomcat]
+22:27:23.628 INFO  Starting Servlet engine: [Apache Tomcat/9.0.27]
+22:27:23.702 INFO  Initializing Spring embedded WebApplicationContext
+22:27:23.702 INFO  Root WebApplicationContext: initialization completed in 1447 ms
+22:27:23.803 WARN  No URLs will be polled as dynamic configuration sources.
+22:27:23.804 INFO  To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:27:23.811 INFO  DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@990b86b
+22:27:24.256 INFO  Initializing ExecutorService 'taskScheduler'
+22:27:24.595 DEBUG Filter 'requestLoggingFilter' configured for use
+22:27:24.807 WARN  No URLs will be polled as dynamic configuration sources.
+22:27:24.807 INFO  To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:27:24.910 INFO  Initializing ExecutorService 'applicationTaskExecutor'
+22:27:25.206 INFO  Looking up function 'null' with acceptedOutputTypes: []
+22:27:25.396 WARN  You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+22:27:25.477 INFO  Initializing ExecutorService 'configWatchTaskScheduler'
+22:27:25.489 INFO  Initializing ExecutorService 'catalogWatchTaskScheduler'
+22:27:25.571 INFO  Exposing 2 endpoint(s) beneath base path '/actuator'
+22:27:25.695 INFO  Channel 'order-service-1.springCloudBusInput' has 1 subscriber(s).
+22:27:25.751 INFO  Registering MessageChannel springCloudBusInput
+22:27:25.789 INFO  Registering MessageChannel nullChannel
+22:27:25.798 INFO  Registering MessageChannel springCloudBusOutput
+22:27:25.805 INFO  Registering MessageChannel errorChannel
+22:27:25.830 INFO  Registering MessageHandler errorLogger
+22:27:25.856 INFO  Registering MessageHandler org.springframework.cloud.stream.binding.StreamListenerMessageHandler@5390862e
+22:27:25.919 INFO  Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+22:27:25.919 INFO  Channel 'order-service-1.errorChannel' has 1 subscriber(s).
+22:27:25.919 INFO  started bean '_org.springframework.integration.errorLogger'
+22:27:27.265 INFO  Located property source: CompositePropertySource {name='consul', propertySources=[ConsulPropertySource {name='config/order-service/'}, ConsulPropertySource {name='config/application/'}]}
+22:27:32.298 INFO  Adding {message-handler:outbound.springCloudBus} as a subscriber to the 'springCloudBusOutput' channel
+22:27:32.299 INFO  Channel 'order-service-1.springCloudBusOutput' has 1 subscriber(s).
+22:27:32.299 INFO  started bean 'outbound.springCloudBus'
+22:27:32.310 INFO  started org.springframework.cloud.consul.binder.ConsulInboundMessageProducer@7d50b4c4
+22:27:32.344 INFO  Starting ProtocolHandler ["http-nio-9000"]
+22:27:32.365 INFO  Tomcat started on port(s): 9000 (http) with context path ''
+22:27:32.377 INFO  Registering service with consul: NewService{id='order-service-873bdabc740c503d86088297b39395a0', name='order-service', tags=[secure=false], address='192.168.0.164', meta=null, port=9000, enableTagOverride=null, check=Check{script='null', interval='10s', ttl='null', http='http://192.168.0.164:9000/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null'}, checks=null}
+22:27:32.395 INFO  Started OrderApplication in 20.577 seconds (JVM running for 21.113)
+22:27:32.651 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:27:32.651 INFO  Initializing Servlet 'dispatcherServlet'
+22:27:32.667 INFO  Completed initialization in 16 ms
+22:27:39.096 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:27:39.134 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:27:49.129 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:27:49.138 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:27:59.131 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:27:59.143 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:28:09.135 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:28:09.145 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:28:19.137 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:28:19.146 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:28:29.140 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:28:29.150 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:28:39.144 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:28:39.154 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:28:49.149 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:28:49.161 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:28:59.155 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:28:59.165 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:29:09.161 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:29:09.170 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:29:19.168 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:29:19.179 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:29:29.174 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:29:29.183 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:29:39.178 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:29:39.187 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:29:49.182 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:29:49.194 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:29:59.189 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:29:59.200 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:30:09.193 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:30:09.203 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:30:19.197 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:30:19.206 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:30:29.198 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:30:29.210 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:30:39.203 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:30:39.214 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:30:49.208 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:30:49.218 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:30:59.211 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:30:59.219 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:31:09.213 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:31:09.223 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:31:19.218 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:31:19.228 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:31:29.222 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:31:29.230 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:31:39.222 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:31:39.230 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:31:49.223 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:31:49.233 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:31:59.226 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:31:59.236 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:32:09.229 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:32:09.238 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:32:19.231 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:32:19.240 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:32:29.233 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:32:29.243 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:32:39.236 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:32:39.247 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:32:49.241 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:32:49.250 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:32:59.244 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:32:59.252 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:33:09.246 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:33:09.255 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:33:19.248 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:33:19.257 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:33:29.252 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:33:29.261 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:33:39.258 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:33:39.266 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:33:39.556 INFO  stopped org.springframework.cloud.consul.binder.ConsulInboundMessageProducer@7d50b4c4
+22:33:39.556 INFO  Removing {message-handler:outbound.springCloudBus} as a subscriber to the 'springCloudBusOutput' channel
+22:33:39.556 INFO  Channel 'order-service-1.springCloudBusOutput' has 0 subscriber(s).
+22:33:39.557 INFO  stopped bean 'outbound.springCloudBus'
+22:33:39.557 INFO  Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+22:33:39.557 INFO  Channel 'order-service-1.errorChannel' has 0 subscriber(s).
+22:33:39.557 INFO  stopped bean '_org.springframework.integration.errorLogger'
+22:33:39.558 INFO  Shutting down ExecutorService 'catalogWatchTaskScheduler'
+22:33:39.558 INFO  Shutting down ExecutorService 'configWatchTaskScheduler'
+22:33:39.559 INFO  Shutting down ExecutorService 'applicationTaskExecutor'
+22:33:39.561 INFO  Deregistering service with consul: order-service-873bdabc740c503d86088297b39395a0
+22:33:39.566 INFO  Shutting down ExecutorService 'taskScheduler'
+22:33:39.568 INFO  Summary on shutdown: bean 'springCloudBusInput'
+22:33:39.568 INFO  Summary on shutdown: nullChannel
+22:33:39.568 INFO  Summary on shutdown: bean 'springCloudBusOutput'
+22:33:39.568 INFO  Summary on shutdown: bean 'errorChannel'
+22:33:39.568 INFO  Summary on shutdown: bean '_org.springframework.integration.errorLogger.handler' for component '_org.springframework.integration.errorLogger'
+22:33:39.568 INFO  Summary on shutdown: org.springframework.cloud.stream.binding.StreamListenerMessageHandler@5390862e
+22:34:28.493 INFO  Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$92a4c1f8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:34:28.496 INFO  Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$b8fb2cd0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:34:33.215 INFO  Located property source: CompositePropertySource {name='consul', propertySources=[ConsulPropertySource {name='config/order-service/'}, ConsulPropertySource {name='config/application/'}]}
+22:34:38.176 INFO  No active profile set, falling back to default profiles: default
+22:34:38.614 WARN  Endpoint ID 'bus-env' contains invalid characters, please migrate to a valid format.
+22:34:38.744 WARN  Endpoint ID 'bus-refresh' contains invalid characters, please migrate to a valid format.
+22:34:38.773 WARN  Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+22:34:38.940 INFO  BeanFactory id=e34cba7f-c4e0-3e85-8bcd-230a9754abb0
+22:34:39.001 INFO  No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+22:34:39.005 INFO  No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+22:34:39.008 INFO  No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+22:34:39.037 INFO  Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$92a4c1f8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:34:39.181 INFO  Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:34:39.186 INFO  Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:34:39.207 INFO  Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:34:39.217 INFO  Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:34:39.225 INFO  Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:34:39.229 INFO  Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:34:39.261 INFO  Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$b8fb2cd0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:34:39.517 INFO  Tomcat initialized with port(s): 9000 (http)
+22:34:39.524 INFO  Initializing ProtocolHandler ["http-nio-9000"]
+22:34:39.525 INFO  Starting service [Tomcat]
+22:34:39.525 INFO  Starting Servlet engine: [Apache Tomcat/9.0.27]
+22:34:39.597 INFO  Initializing Spring embedded WebApplicationContext
+22:34:39.597 INFO  Root WebApplicationContext: initialization completed in 1413 ms
+22:34:39.688 WARN  No URLs will be polled as dynamic configuration sources.
+22:34:39.688 INFO  To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:34:39.695 INFO  DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@6a0c7af6
+22:34:40.147 INFO  Initializing ExecutorService 'taskScheduler'
+22:34:40.473 DEBUG Filter 'requestLoggingFilter' configured for use
+22:34:40.698 WARN  No URLs will be polled as dynamic configuration sources.
+22:34:40.698 INFO  To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:34:40.805 INFO  Initializing ExecutorService 'applicationTaskExecutor'
+22:34:41.091 INFO  Looking up function 'null' with acceptedOutputTypes: []
+22:34:41.275 WARN  You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+22:34:41.354 INFO  Initializing ExecutorService 'configWatchTaskScheduler'
+22:34:41.363 INFO  Initializing ExecutorService 'catalogWatchTaskScheduler'
+22:34:41.443 INFO  Exposing 2 endpoint(s) beneath base path '/actuator'
+22:34:41.567 INFO  Channel 'order-service-1.springCloudBusInput' has 1 subscriber(s).
+22:34:41.623 INFO  Registering MessageChannel springCloudBusInput
+22:34:41.661 INFO  Registering MessageChannel springCloudBusOutput
+22:34:41.668 INFO  Registering MessageChannel nullChannel
+22:34:41.677 INFO  Registering MessageChannel errorChannel
+22:34:41.719 INFO  Registering MessageHandler org.springframework.cloud.stream.binding.StreamListenerMessageHandler@1aba8978
+22:34:41.752 INFO  Registering MessageHandler errorLogger
+22:34:41.797 INFO  Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+22:34:41.797 INFO  Channel 'order-service-1.errorChannel' has 1 subscriber(s).
+22:34:41.797 INFO  started bean '_org.springframework.integration.errorLogger'
+22:34:43.200 INFO  Located property source: CompositePropertySource {name='consul', propertySources=[ConsulPropertySource {name='config/order-service/'}, ConsulPropertySource {name='config/application/'}]}
+22:34:48.226 INFO  Adding {message-handler:outbound.springCloudBus} as a subscriber to the 'springCloudBusOutput' channel
+22:34:48.226 INFO  Channel 'order-service-1.springCloudBusOutput' has 1 subscriber(s).
+22:34:48.226 INFO  started bean 'outbound.springCloudBus'
+22:34:48.237 INFO  started org.springframework.cloud.consul.binder.ConsulInboundMessageProducer@488c608a
+22:34:48.268 INFO  Starting ProtocolHandler ["http-nio-9000"]
+22:34:48.286 INFO  Tomcat started on port(s): 9000 (http) with context path ''
+22:34:48.297 INFO  Registering service with consul: NewService{id='order-service-9f1d7a0986259b1b37c2fd947caf1376', name='order-service', tags=[secure=false], address='192.168.0.164', meta=null, port=9000, enableTagOverride=null, check=Check{script='null', interval='10s', ttl='null', http='http://192.168.0.164:9000/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null'}, checks=null}
+22:34:48.312 INFO  Started OrderApplication in 20.565 seconds (JVM running for 21.114)
+22:34:48.588 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:34:48.589 INFO  Initializing Servlet 'dispatcherServlet'
+22:34:48.601 INFO  Completed initialization in 12 ms
+22:34:52.853 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:34:52.899 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:35:02.895 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:35:02.906 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:35:12.901 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:35:12.914 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:35:22.909 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:35:22.921 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:35:32.916 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:35:32.925 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:35:42.920 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:35:42.931 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:35:52.926 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:35:52.939 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:36:02.932 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:36:02.944 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:36:12.938 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:36:12.946 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:36:22.942 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:36:22.953 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:36:32.946 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:36:32.954 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:36:42.949 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:36:42.959 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:36:52.955 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:36:52.965 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:37:02.958 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:37:02.969 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:37:12.965 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:37:12.976 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:37:22.970 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:37:22.980 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:37:32.973 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:37:32.985 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:37:42.981 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:37:42.991 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:37:52.987 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:37:52.996 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:38:02.991 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:38:03.001 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:38:12.996 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:38:13.004 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:38:22.998 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:38:23.006 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:38:33.001 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:38:33.012 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:38:43.006 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:38:43.014 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:38:53.007 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:38:53.015 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:39:03.011 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:39:03.022 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:39:13.017 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:39:13.028 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:39:23.024 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:39:23.032 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:39:33.025 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:39:33.032 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:39:43.026 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:39:43.035 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:39:53.029 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:39:53.040 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:40:03.032 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:40:03.037 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:40:13.032 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:40:13.041 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:40:23.032 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:40:23.040 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:40:33.035 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:40:33.046 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:40:43.040 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:40:43.048 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:40:53.042 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:40:53.051 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:41:03.045 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:41:03.057 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:41:13.048 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:41:13.058 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:41:23.050 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:41:23.059 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:41:33.053 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:41:33.063 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:41:43.056 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:41:43.067 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:41:53.062 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:41:53.072 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:42:03.065 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:42:03.071 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:42:06.202 INFO  stopped org.springframework.cloud.consul.binder.ConsulInboundMessageProducer@488c608a
+22:42:06.202 INFO  Removing {message-handler:outbound.springCloudBus} as a subscriber to the 'springCloudBusOutput' channel
+22:42:06.203 INFO  Channel 'order-service-1.springCloudBusOutput' has 0 subscriber(s).
+22:42:06.203 INFO  stopped bean 'outbound.springCloudBus'
+22:42:06.203 INFO  Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+22:42:06.203 INFO  Channel 'order-service-1.errorChannel' has 0 subscriber(s).
+22:42:06.203 INFO  stopped bean '_org.springframework.integration.errorLogger'
+22:42:06.204 INFO  Shutting down ExecutorService 'catalogWatchTaskScheduler'
+22:42:06.204 INFO  Shutting down ExecutorService 'configWatchTaskScheduler'
+22:42:06.205 INFO  Shutting down ExecutorService 'applicationTaskExecutor'
+22:42:06.209 INFO  Deregistering service with consul: order-service-9f1d7a0986259b1b37c2fd947caf1376
+22:42:06.214 INFO  Shutting down ExecutorService 'taskScheduler'
+22:42:06.216 INFO  Summary on shutdown: bean 'springCloudBusInput'
+22:42:06.216 INFO  Summary on shutdown: bean 'springCloudBusOutput'
+22:42:06.216 INFO  Summary on shutdown: nullChannel
+22:42:06.216 INFO  Summary on shutdown: bean 'errorChannel'
+22:42:06.216 INFO  Summary on shutdown: org.springframework.cloud.stream.binding.StreamListenerMessageHandler@1aba8978
+22:42:06.216 INFO  Summary on shutdown: bean '_org.springframework.integration.errorLogger.handler' for component '_org.springframework.integration.errorLogger'
+22:42:08.921 INFO  Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$7e00cdcd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:42:08.925 INFO  Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a45738a5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:42:13.664 INFO  Located property source: CompositePropertySource {name='consul', propertySources=[ConsulPropertySource {name='config/order-service/'}, ConsulPropertySource {name='config/application/'}]}
+22:42:18.628 INFO  No active profile set, falling back to default profiles: default
+22:42:19.065 WARN  Endpoint ID 'bus-env' contains invalid characters, please migrate to a valid format.
+22:42:19.197 WARN  Endpoint ID 'bus-refresh' contains invalid characters, please migrate to a valid format.
+22:42:19.228 WARN  Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+22:42:19.389 INFO  BeanFactory id=e34cba7f-c4e0-3e85-8bcd-230a9754abb0
+22:42:19.452 INFO  No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+22:42:19.456 INFO  No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+22:42:19.459 INFO  No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+22:42:19.487 INFO  Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$7e00cdcd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:42:19.631 INFO  Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:42:19.636 INFO  Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:42:19.657 INFO  Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:42:19.666 INFO  Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:42:19.674 INFO  Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:42:19.678 INFO  Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:42:19.708 INFO  Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a45738a5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:42:19.971 INFO  Tomcat initialized with port(s): 9000 (http)
+22:42:19.979 INFO  Initializing ProtocolHandler ["http-nio-9000"]
+22:42:19.980 INFO  Starting service [Tomcat]
+22:42:19.980 INFO  Starting Servlet engine: [Apache Tomcat/9.0.27]
+22:42:20.061 INFO  Initializing Spring embedded WebApplicationContext
+22:42:20.061 INFO  Root WebApplicationContext: initialization completed in 1425 ms
+22:42:20.161 WARN  No URLs will be polled as dynamic configuration sources.
+22:42:20.161 INFO  To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:42:20.170 INFO  DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@3909a854
+22:42:20.593 INFO  Initializing ExecutorService 'taskScheduler'
+22:42:20.905 DEBUG Filter 'requestLoggingFilter' configured for use
+22:42:21.115 WARN  No URLs will be polled as dynamic configuration sources.
+22:42:21.115 INFO  To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:42:21.223 INFO  Initializing ExecutorService 'applicationTaskExecutor'
+22:42:21.493 INFO  Looking up function 'null' with acceptedOutputTypes: []
+22:42:21.662 WARN  You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+22:42:21.739 INFO  Initializing ExecutorService 'configWatchTaskScheduler'
+22:42:21.750 INFO  Initializing ExecutorService 'catalogWatchTaskScheduler'
+22:42:21.827 INFO  Exposing 2 endpoint(s) beneath base path '/actuator'
+22:42:21.934 INFO  Channel 'order-service-1.springCloudBusInput' has 1 subscriber(s).
+22:42:21.986 INFO  Registering MessageChannel errorChannel
+22:42:22.026 INFO  Registering MessageChannel nullChannel
+22:42:22.035 INFO  Registering MessageChannel springCloudBusOutput
+22:42:22.053 INFO  Registering MessageChannel springCloudBusInput
+22:42:22.065 INFO  Registering MessageHandler org.springframework.cloud.stream.binding.StreamListenerMessageHandler@6debf1b8
+22:42:22.107 INFO  Registering MessageHandler errorLogger
+22:42:22.146 INFO  Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+22:42:22.146 INFO  Channel 'order-service-1.errorChannel' has 1 subscriber(s).
+22:42:22.146 INFO  started bean '_org.springframework.integration.errorLogger'
+22:42:23.649 INFO  Located property source: CompositePropertySource {name='consul', propertySources=[ConsulPropertySource {name='config/order-service/'}, ConsulPropertySource {name='config/application/'}]}
+22:42:28.675 INFO  Adding {message-handler:outbound.springCloudBus} as a subscriber to the 'springCloudBusOutput' channel
+22:42:28.675 INFO  Channel 'order-service-1.springCloudBusOutput' has 1 subscriber(s).
+22:42:28.676 INFO  started bean 'outbound.springCloudBus'
+22:42:28.685 INFO  started org.springframework.cloud.consul.binder.ConsulInboundMessageProducer@711261c7
+22:42:28.714 INFO  Starting ProtocolHandler ["http-nio-9000"]
+22:42:28.735 INFO  Tomcat started on port(s): 9000 (http) with context path ''
+22:42:28.746 INFO  Registering service with consul: NewService{id='order-service-9aa2f8cbcf086ac99b90fdfa1cb7d18b', name='order-service', tags=[secure=false], address='192.168.0.164', meta=null, port=9000, enableTagOverride=null, check=Check{script='null', interval='10s', ttl='null', http='http://192.168.0.164:9000/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null'}, checks=null}
+22:42:28.763 INFO  Started OrderApplication in 20.582 seconds (JVM running for 21.122)
+22:42:28.976 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:42:28.977 INFO  Initializing Servlet 'dispatcherServlet'
+22:42:28.990 INFO  Completed initialization in 13 ms
+22:42:37.560 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:42:37.595 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:42:47.591 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:42:47.602 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:42:57.595 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:42:57.603 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:43:07.598 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:43:07.607 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:43:17.600 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:43:17.612 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:43:27.605 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:43:27.615 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:43:37.609 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:43:37.617 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:43:47.612 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:43:47.623 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:43:57.614 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:43:57.625 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:44:07.620 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:44:07.633 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:44:17.629 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:44:17.638 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:44:27.634 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:44:27.643 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:44:37.636 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:44:37.647 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:44:47.644 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:44:47.654 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:44:57.651 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:44:57.661 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:45:07.653 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:45:07.665 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:45:17.658 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:45:17.668 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:45:27.659 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:45:27.666 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:45:37.662 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:45:37.671 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:45:47.666 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:45:47.676 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:45:57.669 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:45:57.679 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:46:07.673 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:46:07.682 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.0.164:9000", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:46:11.528 INFO  stopped org.springframework.cloud.consul.binder.ConsulInboundMessageProducer@711261c7
+22:46:11.528 INFO  Removing {message-handler:outbound.springCloudBus} as a subscriber to the 'springCloudBusOutput' channel
+22:46:11.528 INFO  Channel 'order-service-1.springCloudBusOutput' has 0 subscriber(s).
+22:46:11.528 INFO  stopped bean 'outbound.springCloudBus'
+22:46:11.528 INFO  Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+22:46:11.528 INFO  Channel 'order-service-1.errorChannel' has 0 subscriber(s).
+22:46:11.528 INFO  stopped bean '_org.springframework.integration.errorLogger'
+22:46:11.529 INFO  Shutting down ExecutorService 'catalogWatchTaskScheduler'
+22:46:11.530 INFO  Shutting down ExecutorService 'configWatchTaskScheduler'
+22:46:11.531 INFO  Shutting down ExecutorService 'applicationTaskExecutor'
+22:46:11.532 INFO  Deregistering service with consul: order-service-9aa2f8cbcf086ac99b90fdfa1cb7d18b
+22:46:11.539 INFO  Shutting down ExecutorService 'taskScheduler'
+22:46:11.541 INFO  Summary on shutdown: bean 'errorChannel'
+22:46:11.541 INFO  Summary on shutdown: nullChannel
+22:46:11.541 INFO  Summary on shutdown: bean 'springCloudBusOutput'
+22:46:11.541 INFO  Summary on shutdown: bean 'springCloudBusInput'
+22:46:11.541 INFO  Summary on shutdown: org.springframework.cloud.stream.binding.StreamListenerMessageHandler@6debf1b8
+22:46:11.541 INFO  Summary on shutdown: bean '_org.springframework.integration.errorLogger.handler' for component '_org.springframework.integration.errorLogger'

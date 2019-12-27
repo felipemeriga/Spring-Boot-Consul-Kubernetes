@@ -1,0 +1,29 @@
+16:39:17.664 INFO  Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$a5d39a8e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:39:17.667 INFO  Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$cc2a0566] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:39:32.389 ERROR Fail fast is set and there was an error reading configuration from consul.
+16:39:57.232 INFO  Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$89d64f9a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:39:57.235 INFO  Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$b02cba72] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:40:11.977 ERROR Fail fast is set and there was an error reading configuration from consul.
+16:40:22.986 ERROR Fail fast is set and there was an error reading configuration from consul.
+16:40:34.096 ERROR Fail fast is set and there was an error reading configuration from consul.
+16:40:45.312 ERROR Fail fast is set and there was an error reading configuration from consul.
+16:40:54.090 INFO  Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$a7e6c69d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:40:54.093 INFO  Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ce3d3175] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:41:08.843 ERROR Fail fast is set and there was an error reading configuration from consul.
+16:42:14.391 INFO  Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$9659a327] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:42:14.394 INFO  Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$bcb00dff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:42:29.152 ERROR Fail fast is set and there was an error reading configuration from consul.
+16:42:40.160 ERROR Fail fast is set and there was an error reading configuration from consul.
+16:42:51.264 ERROR Fail fast is set and there was an error reading configuration from consul.
+16:43:01.619 INFO  Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$b1f98af3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:43:01.623 INFO  Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$d84ff5cb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:43:16.351 ERROR Fail fast is set and there was an error reading configuration from consul.
+16:43:25.980 INFO  Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$799a600c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:43:25.983 INFO  Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$9ff0cae4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:43:40.734 ERROR Fail fast is set and there was an error reading configuration from consul.
+16:43:51.744 ERROR Fail fast is set and there was an error reading configuration from consul.
+16:44:02.852 ERROR Fail fast is set and there was an error reading configuration from consul.
+16:44:14.064 ERROR Fail fast is set and there was an error reading configuration from consul.
+16:44:25.398 ERROR Fail fast is set and there was an error reading configuration from consul.
+16:47:48.479 INFO  Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$9ade62d8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:47:48.482 INFO  Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$c134cdb0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)

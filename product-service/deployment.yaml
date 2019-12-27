@@ -1,0 +1,35 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: product-service
+spec:
+  selector:
+    app: product-service
+  type: LoadBalancer
+  ports:
+    - port: 80
+      targetPort: 9001
+
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: product-service
+  labels:
+    app: product-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: product-service
+  template:
+    metadata:
+      labels:
+        app: product-service
+    spec:
+      containers:
+        - name: product-service
+          image: felipemeriga1/product-service:latest
+          ports:
+            - containerPort: 9001
