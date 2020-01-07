@@ -1,4 +1,6 @@
-spring:  
+spring:
+  profiles:
+    active: "prod-zone1"
   application:
     name: gateway-service
   cloud:
@@ -35,7 +37,7 @@ spring:
             - RewritePath=/product/(?<path>.*), /$\{path}
 
 logging.level.com.netflix: DEBUG
-    
+
 management:
   security:
     enabled: false

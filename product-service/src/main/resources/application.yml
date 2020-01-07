@@ -1,23 +1,11 @@
-spring:  
+spring:
+  profiles:
+    active: "prod-zone1"
   application:
     name: product-service
 
 logging:
   level:
     org.springframework.web.filter.CommonsRequestLoggingFilter: DEBUG
-       
----
-spring:
-  profiles: zone1
-  cloud:
-    consul:
-      discovery:
-        instanceZone: zone1
 
----
-spring:
-  profiles: zone2
-  cloud:
-    consul:
-      discovery:
-        instanceZone: zone2
+server.port: 9001
