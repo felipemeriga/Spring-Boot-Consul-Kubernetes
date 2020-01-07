@@ -1,28 +1,73 @@
-spring:  
+spring:
+  profiles:
+    active: "prod-zone1"
   application:
     name: order-service
 
 logging:
-  file: logs/order.log
   level:
-#    com.netflix: DEBUG
     org.springframework.web.filter.CommonsRequestLoggingFilter: DEBUG
-  pattern:
-#    console: "%d{HH:mm:ss.SSS} %-5level %msg%n"
-    file: "%d{HH:mm:ss.SSS} %-5level %msg%n"
-    
----
-spring:
-  profiles: zone1
-  cloud:
-    consul:
-      discovery:
-        instanceZone: zone1
+
+server.port: 9000
 
 ---
 spring:
-  profiles: zone2
+  profiles: dev-zone1
   cloud:
     consul:
+      host: localhost
+      port: 8500
+      config:
+        enabled: true
+      discovery:
+        instanceZone: zone1
+        instance-id: "${spring.application.name}:${random.value}"
+        prefer-ip-address: true
+        # Unregister ghost services
+        #health-check-critical-timeout:
+
+---
+spring:
+  profiles: dev-zone2
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      config:
+        enabled: true
       discovery:
         instanceZone: zone2
+        instance-id: "${spring.application.name}:${random.value}"
+        prefer-ip-address: true
+        # Unregister ghost services
+        #health-check-critical-timeout:
+
+---
+spring:
+  profiles: prod-zone1
+  cloud:
+    consul:
+      host: http://consul-0.consul.default.svc.cluster.local
+      config:
+        enabled: true
+      discovery:
+        instanceZone: zone1
+        instance-id: "${spring.application.name}:${random.value}"
+        prefer-ip-address: true
+        # Unregister ghost services
+        #health-check-critical-timeout:
+
+---
+spring:
+  profiles: prod-zone2
+  cloud:
+    consul:
+      host: http://consul-0.consul.default.svc.cluster.local
+      config:
+        enabled: true
+      discovery:
+        instanceZone: zone2
+        instance-id: "${spring.application.name}:${random.value}"
+        prefer-ip-address: true
+        # Unregister ghost services
+        #health-check-critical-timeout:
