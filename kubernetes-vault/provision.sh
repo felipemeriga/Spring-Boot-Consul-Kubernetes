@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# This is the bash script for deploying Consul and Vault on Kubernetes
 
 echo "Generating the Gossip encryption key..."
 
@@ -29,42 +29,42 @@ echo "Creating the Consul StatefulSet..."
 
 kubectl create -f consul/statefulset.yaml
 
-
-echo "Creating a Secret to store the Vault TLS certificates..."
-
-kubectl create secret generic vault \
-    --from-file=certs/ca.pem \
-    --from-file=certs/vault.pem \
-    --from-file=certs/vault-key.pem
-
-
-echo "Storing the Vault config in a ConfigMap..."
-
-kubectl create configmap vault --from-file=vault/config.json
-
-
-echo "Creating the Vault Service..."
-
-kubectl create -f vault/service.yaml
-
-
-echo "Creating the Vault Deployment..."
-
-kubectl apply -f vault/deployment.yaml
-
-
-echo "All done! Forwarding port 8200..."
-
-POD=$(kubectl get pods -o=name | grep vault | sed "s/^.\{4\}//")
-
-while true; do
-  STATUS=$(kubectl get pods ${POD} -o jsonpath="{.status.phase}")
-  if [ "$STATUS" == "Running" ]; then
-    break
-  else
-    echo "Pod status is: ${STATUS}"
-    sleep 5
-  fi
-done
-
-kubectl port-forward $POD 8200:8200
+#
+#echo "Creating a Secret to store the Vault TLS certificates..."
+#
+#kubectl create secret generic vault \
+#    --from-file=certs/ca.pem \
+#    --from-file=certs/vault.pem \
+#    --from-file=certs/vault-key.pem
+#
+#
+#echo "Storing the Vault config in a ConfigMap..."
+#
+#kubectl create configmap vault --from-file=vault/config.json
+#
+#
+#echo "Creating the Vault Service..."
+#
+#kubectl create -f vault/service.yaml
+#
+#
+#echo "Creating the Vault Deployment..."
+#
+#kubectl apply -f vault/deployment.yaml
+#
+#
+#echo "All done! Forwarding port 8200..."
+#
+#POD=$(kubectl get pods -o=name | grep vault | sed "s/^.\{4\}//")
+#
+#while true; do
+#  STATUS=$(kubectl get pods ${POD} -o jsonpath="{.status.phase}")
+#  if [ "$STATUS" == "Running" ]; then
+#    break
+#  else
+#    echo "Pod status is: ${STATUS}"
+#    sleep 5
+#  fi
+#done
+#
+#kubectl port-forward $POD 8200:8200
