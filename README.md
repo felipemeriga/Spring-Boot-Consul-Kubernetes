@@ -28,6 +28,26 @@ When running sample applications we can test more advanced scenario. We may leve
 ## Description
 Detailed description can be found here: [Microservices with Spring Boot, Spring Cloud Gateway and Consul Cluster](https://piotrminkowski.wordpress.com/2019/11/06/microservices-with-spring-boot-spring-cloud-gateway-and-consul-cluster/)
 
+## Generating the Docker Images
+
+For default all the kubernetes files are using the following images for each service:
+- Order-Service: felipemeriga1/order-service:latest
+- Account-Service: felipemeriga1/account-service:latest
+- Gateway-Service: felipemeriga1/gateway-service:latest
+- Customer-Service: felipemeriga1/customer-service:latest
+- Product-Service: felipemeriga1/product-service:latest
+
+If you want to build your own images, go to the service's folder and run the command:
+
+```
+$ docker image build -t <service-name> .
+$ docker push <service-name>
+```
+
+After you have pushed all the images, change the image names in the deployment.yaml files and 
+in the helm chart files.
+
+
 ## Deploying on Kubernetes
 
 As Kubernetes is also a service discovery tool as Consul, and as we are going to use only consul to this activity, we have
@@ -44,6 +64,17 @@ the Consul containers provided from Helm in many times will result on service di
 Helm, Consul and Spring Boot together. So, that is why we decided to go to the StatefulSet approach, because was the one who showed more stability along a set of practical tests.
 
 Together with Consul, we will use Vault, which is a service for securely accessing secrets, without exposing that directly in the Kubernetes cluster.
+
+### Deploying with Helm Charts
+
+Deploying services in Kubernetes is very straightforward using Helm, where you have more configuration management
+and you can delete, create or update a service instantly with Helm.
+
+For deploying the services in Kubernetes cluster with Helm, just do the command( Helm chart version 3):
+```
+$ helm install <service-name> <helm-chart-folder>
+```
+
 
 ### Deploying Consul and Vault on Kubernetes
 
